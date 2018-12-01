@@ -1,0 +1,4 @@
+* SmileBASIC Wiki temporary location
+
+#+HTML <input type="checkbox" name="fold">fold</input>
+<input type="checkbox" name="fold2">fold2</input>
