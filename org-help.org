@@ -1,7 +1,7 @@
 #+TITLE: Org Mode Primer
 #+OPTIONS: f:t
 
-Headings:
+** Headings:
 #+BEGIN_SRC org
 * h1
 ** h2
@@ -17,7 +17,7 @@ Headings:
 ***** h5
 ****** h6
 
-Links:
+** Links:
 #+BEGIN_SRC org
 [[https://www.smilebasicsource.com][link text]],
 [[#wow][wow anchors]]
@@ -29,7 +29,7 @@ image: [[http://kland.smilebasicsource.com/i/lapjj.png]]
 ** wow
 [[http://kland.smilebasicsource.com/i/lapjj.png]]
 
-Formatting:
+** Formatting:
 #+BEGIN_SRC org
 /italic/
 *bold*
@@ -46,7 +46,7 @@ __underline__
 
 github can't handle bold-italic, but...
 
-Inline HTML:
+** Inline HTML:
 
 Unfortunately inline HTML only supports the few 'clean' tags, but it's still worth mentioning...
 #+BEGIN_SRC org
@@ -56,7 +56,7 @@ Unfortunately inline HTML only supports the few 'clean' tags, but it's still wor
 #+HTML: <b><i>bold italic</i></b>
 #+HTML: <marquee>ww</marquee>
 
-Code blocks:
+** Code blocks:
 #+BEGIN_SRC org
 ,#+BEGIN_SRC lang
 code
@@ -67,7 +67,7 @@ code
 #+END_SRC
 supposedly github will highlight it if you have a language supported by some list I forget where to find but I wouldn't rely on it.
 
-Tables:
+** Tables:
 #+BEGIN_SRC org
 | Name  | Phone | Age |
 |-------+-------+-----|
@@ -81,7 +81,14 @@ Tables:
 
 columns don't have to be aligned but it's a lot nicer.  If you edit using orgmode in emacs it'll handle ascii-mode formatting for you.
 
-Footnotes:
+
+** More??
+- https://github.com/wallyqs/org-ruby/tree/master/spec/html_examples
+- [[https://github.com/wallyqs/org-ruby/blob/master/spec/html_examples/entities.org#list-of-entities-supported][list of \hearts escaped entities \hearts]]
+
+
+** Footnotes:
+(You may need ~#+OPTIONS: f:t~ in the preamble.)
 #+BEGIN_SRC org
 ,#+OPTIONS: f:t
 Using numbers [fn:0]
@@ -96,12 +103,6 @@ Using numbers [fn:0]
 
 Using letters and not defined in the footnote [fn:abc]
 
-Using letters and defined in the footnote [fn:def:definition of abc]
+Using letters and defined in the footnote [fn:def:definition of def]
 
 [fn:0] Footnote definition
-
-You may need ~#+OPTIONS: f:t~ in the preamble.
-
-
-** More??
-https://github.com/wallyqs/org-ruby/tree/master/spec/html_examples
