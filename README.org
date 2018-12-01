@@ -16,6 +16,6 @@
 
 * Contributing
 Please write documentation in [[https://orgmode.org/manual/index.html#Top][Org Mode]].  
-A tutorial can be found [[org-help.org][here]].
+A tutorial can be found [[https://github.com/y-ack/puchikon-no-hata/blob/master/org-help.org][here]].
 
-Follow [[template.org][the template for instruction pages]].
+Follow [[https://github.com/y-ack/puchikon-no-hata/blob/master/template.org][the template for instruction pages]].
