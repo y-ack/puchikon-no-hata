@@ -1,0 +1,2 @@
+* ASIN
+arcsine of angle
