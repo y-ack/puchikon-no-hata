@@ -1,0 +1,95 @@
+#+TITILE: Org Mode Primer
+#+OPTIONS: f:t
+
+Headings:
+#+BEGIN_SRC org
+* h1
+** h2
+*** h3
+**** h4
+***** h5
+****** h6
+#+END_SRC
+* h1
+** h2
+*** h3
+**** h4
+***** h5
+****** h6
+
+Formatting:
+#+BEGIN_SRC org
+/italic/
+*bold*
+__underline__
++strikethrough+
+~monospace~
+=verbatim=
+#+END_SRC
+/italic/
+*bold*
++strikethrough+
+~monospace~
+=verbatim=
+
+github can't handle bold-italic, but...
+
+Inline HTML:
+
+Unfortunately inline HTML only supports the few 'clean' tags, but it's still worth mentioning...
+#+BEGIN_SRC org
+#+HTML: <b><i>bold italic</i></b>
+#+HTML: <marquee>ww</marquee>
+#+END_SRC
+#+HTML: <b><i>bold italic</i></b>
+#+HTML: <marquee>ww</marquee>
+
+Code blocks:
+#+BEGIN_SRC org
+,#+BEGIN_SRC lang
+code
+,#+END_SRC
+#+END_SRC
+#+BEGIN_SRC lang
+code
+#+END_SRC
+supposedly github will highlight it if you have a language supported by some list I forget where to find but I wouldn't rely on it.
+
+Tables:
+#+BEGIN_SRC org
+| Name  | Phone | Age |
+|-------+-------+-----|
+| Peter |  1234 |  17 |
+| Anna  |  4321 |  25 |
+#+END_SRC
+| Name  | Phone | Age |
+|-------+-------+-----|
+| Peter |  1234 |  17 |
+| Anna  |  4321 |  25 |
+
+columns don't have to be aligned but it's a lot nicer.  If you edit using orgmode in emacs it'll handle ascii-mode formatting for you.
+
+Footnotes:
+#+BEGIN_SRC org
+,#+OPTIONS: f:t
+Using numbers [fn:0]
+
+Using letters and not defined in the footnote [fn:abc]
+
+Using letters and defined in the footnote [fn:def:definition of abc]
+
+[fn:0] Footnote definition
+#+END_SRC org
+Using numbers [fn:0]
+
+Using letters and not defined in the footnote [fn:abc]
+
+Using letters and defined in the footnote [fn:def:definition of abc]
+
+[fn:0] Footnote definition
+
+You may need ~#+OPTIONS: f:t~ in the preamble.
+
+
+** More??
+https://github.com/wallyqs/org-ruby/tree/master/spec/html_examples
