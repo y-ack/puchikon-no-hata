@@ -21,6 +21,10 @@
 Please write documentation in [[https://orgmode.org/manual/index.html#Top][Org Mode]].  
 A tutorial can be found [[https://github.com/y-ack/puchikon-no-hata/blob/master/org-help.org][here]].
 
-Follow [[https://github.com/y-ack/puchikon-no-hata/blob/master/template.org][the template for instruction pages]].
-
 For help setting up git on command line (e.g. for editing orgmode files in emacs) see [[git-help.org]]
+
+Note that by contributing to the project, you agree to waive all legal rights to the content you contribute where applicable by law, under the [[https://creativecommons.org/publicdomain/zero/1.0/legalcode][Creative Commons CC0 Universal License]].
+
+For more information on contributing, see [[/CONTRIBUTING.org][CONTRIBUTING]]
+
+[[https://licensebuttons.net/l/zero/1.0/88x15.png]]
