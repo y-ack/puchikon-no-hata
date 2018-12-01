@@ -1,3 +1,29 @@
+#+TEMPLATE_VERSION: 1.1
+#+OPTIONS: f:t
+
+# PLATFORM INFO TEMPLATES
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on 3DS
+#+END_SRC
+#+BEGIN_COMMENT # did I mention that org-ruby is broken
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on Wii U
+#+END_SRC
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on Pasocom Mini
+#+END_SRC
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on *Starter
+#+END_SRC
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on Switch
+#+END_SRC
+#+END_COMMENT
+
 # modify these to display the category name and link to the previous and next pages.
 # REMEMBER TO COPY IT TO THE FOOTER AS WELL
 [[/][Top]] | [[../][Up (CATEGORY)]] | [[PREVIOUS.org][ < Previous (PAGE NAME)]] | [[NEXT.org][Next > (PAGE NAME)]]
@@ -31,7 +57,7 @@ FOO A$
 + [[#321][3.2.1]]
 + [[#40][Switch 4.0]]
 *** 3.2.0
-it didn't work
+it didn't work [fn:1]
 
 *** 3.2.1
 no longer crashes when called
@@ -39,6 +65,10 @@ no longer crashes when called
 *** 4.0
 Superseded by [[FOOO.org][FOOO]]
 
+** References
+[fn:1] http://smilebasic.com/debug/archive/
 
 # If the page is longer than one screen height or so, add a navigation bar at the bottom of the page as well
-# [[/][Top]] | [[../][Up (CATEGORY)]] | [[PREVIOUS.org][ < Previous (PAGE NAME)]] | [[NEXT.org][Next > (PAGE NAME)]]
+# (if the page is short you may omit this)
+-----
+[[/][Top]] | [[../][Up (CATEGORY)]] | [[PREVIOUS.org][ < Previous (PAGE NAME)]] | [[NEXT.org][Next > (PAGE NAME)]]
