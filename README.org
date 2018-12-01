@@ -1,4 +1,21 @@
 * SmileBASIC Wiki temporary location
 
-#+HTML <input type="checkbox" name="fold">fold</input>
-<input type="checkbox" name="fold2">fold2</input>
+** Table of Contents:
++ [[/CONTROL/][CONTROL FLOW]]
+  - [[/CONTROL/WHILE.org][WHILE]]
++ [[/MATH/][MATH]]
++ [[/SPRITE/][SPRITE]]
++ [[/BG/][BG]]
++ [[/SOUND/][SOUND]]
++ [[/FILE/][FILE]]
++ [[/INPUT/][INPUT & HW]]
+** Lists
++ [[/Operators.org][Operators]]
++ [[/Error.org][Errors]]
++ [[/Constants.org][Constants]]
+
+* Contributing
+Please write documentation in [[https://orgmode.org/manual/index.html#Top][Org Mode]].  
+A tutorial can be found [[org-help.org][here]].
+
+Follow [[template.org][the template for instruction pages]].
