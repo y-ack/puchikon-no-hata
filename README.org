@@ -19,3 +19,5 @@ Please write documentation in [[https://orgmode.org/manual/index.html#Top][Org M
 A tutorial can be found [[https://github.com/y-ack/puchikon-no-hata/blob/master/org-help.org][here]].
 
 Follow [[https://github.com/y-ack/puchikon-no-hata/blob/master/template.org][the template for instruction pages]].
+
+For help setting up git on command line (e.g. for editing orgmode files in emacs) see [[git-help.org]]
