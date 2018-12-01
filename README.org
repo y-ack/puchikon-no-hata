@@ -9,6 +9,9 @@
 + [[/SOUND/][SOUND]]
 + [[/FILE/][FILE]]
 + [[/INPUT/][INPUT & HW]]
++ [[/DLC/][DLC]]
+  - [[/DLC/SOUNDPROCESSING/][SOUND PROCESSING UNIT]]
+    * [[/DLC/SOUNDPROCESSING/ARYOP][ARYOP]]
 ** Lists
 + [[/Operators.org][Operators]]
 + [[/Error.org][Errors]]
