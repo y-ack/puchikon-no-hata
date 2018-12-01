@@ -1,4 +1,4 @@
-#+TITILE: Org Mode Primer
+#+TITLE: Org Mode Primer
 #+OPTIONS: f:t
 
 Headings:
@@ -16,6 +16,18 @@ Headings:
 **** h4
 ***** h5
 ****** h6
+
+Links:
+#+BEGIN_SRC org
+[[https://www.smilebasicsource.com][link text]],
+[[#wow][wow anchors]]
+** wow
+image: [[http://kland.smilebasicsource.com/i/lapjj.png]]
+#+END_SRC
+[[https://www.smilebasicsource.com][link text]],
+[[#wow][wow anchors]]
+** wow
+[[http://kland.smilebasicsource.com/i/lapjj.png]]
 
 Formatting:
 #+BEGIN_SRC org
