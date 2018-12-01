@@ -1,0 +1,52 @@
+* Setting up contributing from a terminal
+Install git.  Find another guide if you're not sure how to do this.
+
+(Hint: it's probably just ~apt-get install git~)
+
+Fork the repository on github (the button in the top right)
+
+** Outside contributor group:
+Clone the forked repository:
+#+begin_src bash
+git clone https://github.com/yourname/puchikon-no-hata.git
+cd puchikon-no-hata
+git remote add upstream https://github.com/y-ack/puchikon-no-hata.git
+git checkout -b yournamedocs
+#+end_src
+This will create a local git directory called ~puchikon-no-hata/~ in the current directory
+we also need to make sure changes from the 'upstream' repository are considered when pulling, thus the remote add.
+and also umm making the actual branch 'yournamedocs' lol
+
+Set your name if you haven't.
+#+begin_src bash
+git config --global user.name "cool guy"
+#+end_src
+
+usual commit process:
+#+begin_src bash
+git pull
+# do your edits
+git add . # from base directory if necessary
+git status # if you want to see the staged changes
+git commit -m "a helpful commit message"
+
+git push origin yournamedocs
+#+end_src
+
+and finally open a pull request on github
+
+** If you are an approved contributor
+I think it's a little easier?
+#+begin_src bash
+git clone https://github.com/y-ack/puchikon-no-hata.git
+cd puchikon-no-hata
+git config --global user.name "cool guy"
+#+end_src
+#+begin_src bash
+git pull
+# edits
+git add
+git commit -m "commit message"
+
+git push
+#+end_src
