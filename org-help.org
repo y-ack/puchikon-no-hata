@@ -1,6 +1,9 @@
 #+TITLE: Org Mode Primer
 #+OPTIONS: f:t
 
+Things to remember:
+Org likes to be like TeX and collapse extra spaces, and considers single line breaks to be an author's formatting aid, not a formatting choice.  Two line breaks result in a paragraph break.  To force a single line break, use =\\=
+
 ** Headings:
 #+BEGIN_SRC org
 * h1
@@ -37,12 +40,14 @@ __underline__
 +strikethrough+
 ~monospace~
 =verbatim=
+force \\ line break
 #+END_SRC
 /italic/
 *bold*
 +strikethrough+
 ~monospace~
 =verbatim=
+force \\ line break
 
 github can't handle bold-italic, but...
 
