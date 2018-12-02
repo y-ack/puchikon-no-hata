@@ -1,5 +1,6 @@
 #+TEMPLATE_VERSION: 1.1
 #+OPTIONS: f:t
+#+OPTIONS: \n:t
 
 # PLATFORM INFO TEMPLATES
 #+BEGIN_COMMENT
@@ -56,9 +57,8 @@ PRINT RND(6)+1
 # use the headings below.  Include bugs.
 ** Version Information
 # include this table even if there is only one entry
-+ [[#320][3.2.0]]
-+ [[#321][3.2.1]]
-+ [[#40][Switch 4.0]]
++ [[#300][3.0.0]]
++ [[#302][3.0.2]]
 *** 3.0.0
 Passing a range of 0 to RND would result in garbage output.[fn:1]
 
