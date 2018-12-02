@@ -6,3 +6,9 @@ Suffixes:
 | #  | double  | 
 | $  | string  |
 | [] | array   |
+
+#+BEGIN_SRC haskell
+LOCATE x%?, y%? [, x%]
+LOCATE ?x%, ?y% [, x%]
+GPUTCHR x%, y%, string$ [, scale_x%, scale_y%] [, color%]
+#+END_SRC haskell
