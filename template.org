@@ -32,9 +32,43 @@
 Describe the instruction briefly here
 
 ** Syntax
-#+BEGIN_SRC smilebasic
-FOO arg1$
+typescript
+#+BEGIN_SRC typescript
+FOO arg0% [, arg1$]
 #+END_SRC
+smalltalk
+#+BEGIN_SRC smalltalk
+FOO arg0% [, arg1$]
+#+END_SRC
+slim
+#+BEGIN_SRC slim
+FOO arg0% [, arg1$]
+#+END_SRC
+scala
+#+BEGIN_SRC scala
+FOO arg0% [, arg1$]
+#+END_SRC
+prolog
+#+BEGIN_SRC prolog
+FOO arg0% [, arg1$]
+#+END_SRC
+ocaml
+#+BEGIN_SRC ocaml
+FOO arg0% [, arg1$]
+#+END_SRC
+nginx
+#+BEGIN_SRC nginx
+FOO arg0% [, arg1$]
+#+END_SRC
+haskell
+#+BEGIN_SRC haskell
+FOO arg0% [, arg1$]
+#+END_SRC
+ceylon
+#+BEGIN_SRC ceylon
+FOO arg0% [, arg1$]
+#+END_SRC
+
 # if alternate syntax is needed, list it in the same way. Use OUT for one-return forms
 
 # describe the arguments here, if necessary.  at minimum, describe types
