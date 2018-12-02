@@ -59,14 +59,15 @@ PRINT RND(6)+1
 + [[#300][3.0.0]]
 + [[#302][3.0.2]]
 *** 3.0.0
-Passing a range of 0 to RND would result in garbage output.[fn:1]
+Passing a range of 0 to RND would result in garbage output.[fn:2]
 
 *** 3.0.2
-Fixes range-0 bug.[fn:1]
+Fixes range-0 bug.[fn:2]
 
 ** References
-[fn:1] http://smilebasic.com/en/debug/archive/ \\
-[fn:2] https://smilebasicsource.com/page?pid=992
+[fn:1] https://smilebasicsource.com/page?pid=992 \\
+[fn:2] http://smilebasic.com/en/debug/archive/
+
 
 # If the page is longer than one screen height or so, add a navigation bar at the bottom of the page as well
 # (if the page is short you may omit this)
