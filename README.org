@@ -2,11 +2,12 @@
 
 ** Important Reading
 The following articles contain highly recommended pre-reading material regarding SmileBASIC fundamentals and internals that aid understanding of the rest of the documentation.
-+ [[/SmileBASIC/Variables.org][Variables and Types]]
-+ [[/SmileBASIC/Functions.org][Functions]]
-+ [[/SmileBASIC/Scope.org][Scope]]
-+ [[/SmileBASIC/Compiler.org][Compilation]]
-+ [[/SmileBASIC/Colors.org][Color Formats]]
++ [[/notes/Syntax.org][Syntax Notation Used In This Guide]]
++ [[/notes/Variables.org][Variables and Types]]
++ [[/notes/Functions.org][Functions]]
++ [[/notes/Scope.org][Scope]]
++ [[/notes/Compiler.org][Compilation]]
++ [[/notes/Colors.org][Color Formats]]
 
 ** Table of Contents:
 + [[/CONTROL/][CONTROL FLOW]]
