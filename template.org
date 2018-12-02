@@ -32,17 +32,9 @@
 Describe the instruction briefly here
 
 ** Syntax
-prolog
-#+BEGIN_SRC prolog
-FOO arg0% [, arg1$ [, arg3#]?] OUT color%
-#+END_SRC
-ocaml
-#+BEGIN_SRC ocaml
-FOO arg0% [, arg1$ [, arg3#]?] OUT color%
-#+END_SRC
-haskell
+# use haskell as language for syntax examples as a gross workaround for github being the worst
 #+BEGIN_SRC haskell
-FOO arg0% [, arg1$ [, arg3#]?] OUT color%
+FOO arg0% [, arg1$ [, arg2#]?] OUT color%
 #+END_SRC
 
 # if alternate syntax is needed, list it in the same way. Use OUT for one-return forms
@@ -50,7 +42,9 @@ FOO arg0% [, arg1$ [, arg3#]?] OUT color%
 # describe the arguments here, if necessary.  at minimum, describe types
 | parameter | description |
 |-----------+-------------|
+| arg0%     | turn on/off |
 | arg1$      | the giant bag of laundry to foo |
+| arg2#     | omi wa is not my lover |
 
 ** Examples
 #+BEGIN_SRC smilebasic
