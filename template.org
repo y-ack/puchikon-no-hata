@@ -34,16 +34,15 @@ Describe the instruction briefly here
 ** Syntax
 prolog
 #+BEGIN_SRC prolog
-FOO arg0% [, arg1$ [, arg3#]?]
+FOO arg0% [, arg1$ [, arg3#]?] OUT T
 #+END_SRC
 ocaml
 #+BEGIN_SRC ocaml
-FOO arg0% [, arg1$ [, arg3#]?]
+FOO arg0% [, arg1$ [, arg3#]?] OUT T
 #+END_SRC
-nginx
 haskell
 #+BEGIN_SRC haskell
-FOO arg0% [, arg1$ [, arg3#]?]
+FOO arg0% [, arg1$ [, arg3#]?] OUT T
 #+END_SRC
 
 # if alternate syntax is needed, list it in the same way. Use OUT for one-return forms
