@@ -1,0 +1,38 @@
+#+TEMPLATE_VERSION: 1.12
+#+OPTIONS: f:t
+
+# modify these to display the category name and link to the previous and next pages.
+# REMEMBER TO COPY IT TO THE FOOTER AS WELL
+[[/][Top]] | [[../][Up (MATH)]] | [[PREVIOUS.org][< Previous (PAGE NAME)]] | [[RND.org][Next (RND) >]]
+
+* RANDOMIZE
+Sets the randomizer seed of one of the 8 RNG channels.
+
+** Syntax
+# use haskell as language for syntax examples as a gross workaround for github being the worst
+#+BEGIN_SRC haskell
+RANDOMIZE channel% [, seed%]
+#+END_SRC
+
+# describe the arguments here, if necessary.  at minimum, describe types
+| parameter | description |
+|-----------+-------------|
+| channel%  | channel # 0-7 |
+| seed%     | The seed to use. If 0 or omitted, a random seed is used |
+
+** Examples
+Seeded channels yielding the same result:
+#+BEGIN_SRC smilebasic
+RANDOMIZE 0, 398
+RANDOMIZE 1, 398
+?RND(0,1000)
+?RND(1,1000)
+#+END_SRC
+
+** References
+[fn:1] 12Me21, "Random Numbers." https://smilebasicsource.com/page?pid=992
+
+# If the page is longer than one screen height or so, add a navigation bar at the bottom of the page as well
+# (if the page is short you may omit this)
+-----
+[[/][Top]] | [[../][Up (MATH)]] | [[PREVIOUS.org][< Previous (PAGE NAME)]] | [[RND.org][Next (RND) >]]
