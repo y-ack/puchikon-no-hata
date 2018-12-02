@@ -1,0 +1,8 @@
+* Notation for Syntax
+
+
+Suffixes: 
+| %  | integer |
+| #  | double  | 
+| $  | string  |
+| [] | array   |
