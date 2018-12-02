@@ -1,0 +1,36 @@
+#+TEMPLATE_VERSION: 1.12
+#+OPTIONS: f:t
+
+# modify these to display the category name and link to the previous and next pages.
+# REMEMBER TO COPY IT TO THE FOOTER AS WELL
+[[/][Top]] | [[../][Up (MATH)]] | [[RND.org][< Previous (RND)]] | [[NEXT.org][Next (PAGE NAME) >]]
+
+* RNDF
+Return a real number between 0.0 and 1.0, optionally using a seeded [[RANDOMIZE.org][randomizer channel]].
+
+** Syntax
+# use haskell as language for syntax examples as a gross workaround for github being the worst
+#+BEGIN_SRC haskell
+RNDF [channel%] OUT value#
+#+END_SRC
+
+# if alternate syntax is needed, list it in the same way. Use OUT for one-return forms
+
+# describe the arguments here, if necessary.  at minimum, describe types
+| parameter | description |
+|-----------+-------------|
+| channel%  | (0-7) Randomizer channel to use |
+
+** Examples
+Display a random real number between 0.0 and 1.0:
+#+BEGIN_SRC smilebasic
+PRINT RNDF()
+#+END_SRC
+
+** References
+[fn:1] 12Me21, "Random Numbers." https://smilebasicsource.com/page?pid=992
+
+# If the page is longer than one screen height or so, add a navigation bar at the bottom of the page as well
+# (if the page is short you may omit this)
+-----
+[[/][Top]] | [[../][Up (CATEGORY)]] | [[PREVIOUS.org][< Previous (PAGE NAME)]] | [[NEXT.org][Next (PAGE NAME) >]]
