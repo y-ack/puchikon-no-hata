@@ -33,4 +33,4 @@ PRINT RNDF()
 # If the page is longer than one screen height or so, add a navigation bar at the bottom of the page as well
 # (if the page is short you may omit this)
 -----
-[[/][Top]] | [[../][Up (CATEGORY)]] | [[PREVIOUS.org][< Previous (PAGE NAME)]] | [[NEXT.org][Next (PAGE NAME) >]]
+[[/][Top]] | [[../][Up (MATH)]] | [[RND.org][< Previous (RND)]] | [[NEXT.org][Next (PAGE NAME) >]]
