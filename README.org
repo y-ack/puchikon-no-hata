@@ -18,8 +18,8 @@ The following articles contain highly recommended pre-reading material regarding
 + [[/FILE/][FILE]]
 + [[/INPUT/][INPUT & HW]]
 + [[/DLC/][DLC]]
-  - [[/DLC/SOUNDPROCESSING/][SOUND PROCESSING UNIT]]
-    * [[/DLC/SOUNDPROCESSING/ARYOP][ARYOP]]
+	- [[/DLC/SOUNDPROCESSING/][SOUND PROCESSING UNIT]]
+		* [[/DLC/SOUNDPROCESSING/ARYOP][ARYOP]]
 ** Lists
 + [[/Operators.org][Operators]]
 + [[/Error.org][Errors]]
