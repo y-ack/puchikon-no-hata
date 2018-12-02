@@ -2,7 +2,7 @@
 #+OPTIONS: f:t
 
 Things to remember:
-Org likes to be like TeX and collapse extra spaces, and considers single line breaks to be an author's formatting aid, not a formatting choice.  Two line breaks result in a paragraph break.  To force a single line break, use =\\=
+Org likes to be like TeX and collapse extra spaces, and considers single line breaks to be an author's formatting aid, not a formatting choice.  Two line breaks result in a paragraph break.  To force a single line break, use =\\= (only works at the end of lines here)
 
 ** Headings:
 #+BEGIN_SRC org
@@ -40,14 +40,16 @@ __underline__
 +strikethrough+
 ~monospace~
 =verbatim=
-force \\ line break
+force \\
+line \\ break
 #+END_SRC
 /italic/
 *bold*
 +strikethrough+
 ~monospace~
 =verbatim=
-force \\ line break
+force \\
+line \\ break
 
 github can't handle bold-italic, but...
 
