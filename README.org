@@ -1,5 +1,13 @@
 * SmileBASIC Wiki temporary location
 
+** Important Reading
+The following articles contain highly recommended pre-reading material regarding SmileBASIC fundamentals and internals that aid understanding of the rest of the documentation.
++ [[/SmileBASIC/Variables.org][Variables and Types]]
++ [[/SmileBASIC/Functions.org][Functions]]
++ [[/SmileBASIC/Scope.org][Scope]]
++ [[/SmileBASIC/Compiler.org][Compilation]]
++ [[/SmileBASIC/Colors.org][Color Formats]]
+
 ** Table of Contents:
 + [[/CONTROL/][CONTROL FLOW]]
   - [[/CONTROL/WHILE.org][WHILE]]
