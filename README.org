@@ -10,7 +10,7 @@ The following articles contain highly recommended pre-reading material regarding
 
 ** Table of Contents:
 + [[/CONTROL/][CONTROL FLOW]]
-  - [[/CONTROL/WHILE.org][WHILE]]
+	- [[/CONTROL/WHILE.org][WHILE]]
 + [[/MATH/][MATH]]
 + [[/SPRITE/][SPRITE]]
 + [[/BG/][BG]]
