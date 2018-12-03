@@ -1,13 +1,35 @@
 * Notation for Syntax
 
+Syntax conventions used in this guide:
+| Notation            | Meaning                                 | Syntax example                   | Sample entry       |
+|---------------------+-----------------------------------------+----------------------------------+--------------------|
+| Uppercase           | Keyword; enter as shown                 | PRINT                            | PRINT              |
+| Lowercase parameter | Parameter name; substitute a value      | PRINT value                      | PRINT "TEXT"       |
+| OUT keyword         | enter as shown (return values follow)   | BACKCOLOR OUT color%             | BACKCOLOR OUT C    |
+| % parameter suffix  | Integer type parameter                  | CHR$ code% OUT char$             | C$ = CHR$(65)      |
+| # parameter suffix  | Real type parameter                     | RAD angle# OUT radians           | A = RAD(73.22)     |
+| $ parameter suffix  | String type parameter                   | VAL numeric_string$ OUT value    | N = VAL("100")     |
+| @ label notation    | Label; substitute label identifier      | GOTO @<label>                    | GOTO @LOOP         |
+| [] parameter suffix | Array parameter                         | LEN array[] OUT length%          | DIM A\[2]:L=LEN(A) |
+| ? parameter suffix  | Nullable parameter; optional use        | LOCATE x%?, y%?                  | LOCATE ,14         |
+| Comma               | Separator; enter as shown               | POW base, exponent OUT power     | N = POW(2,8)       |
+| Enclosing brackets  | Optional parameter(s)                   | PRINT [value[, value]]           | PRINT 1            |
+| Ellipsis            | List; repeat numbered item              | MAX num_1, num_2 [, ...] OUT max | N = MAX(1,2,3,4,5) |
+| Or-bar (\vert)      | Mutual exclusion; enter one as shown    | OPTION STRICT\vertDEFINT         | OPTION DEFINT      |
+| Angle brackets      | Identifier; substitute legal identifier | DEF <identifier>                 | DEF COOL_FUNCTION  |
+"Enter as shown" means to enter the /letters/ shown; SmileBASIC is not case-sensitive.
 
-Suffixes: 
-| %  | integer |
-| #  | double  | 
-| $  | string  |
-| [] | array   |
+** For Contributors
+(github sucks edition)
+Set source block code language to haskell for helpful highlighting
+#+BEGIN_SRC org
+,#+BEGIN_SRC haskell
+LOCATE x%?, y%? [, z%]
+GPUTCHR x%, y%, string$ [, scale_x%, scale_y%] [, color%]
+,#+END_SRC
+#+END_SRC
 
 #+BEGIN_SRC haskell
-LOCATE x%?, y%? [, x%]
+LOCATE x%?, y%? [, z%]
 GPUTCHR x%, y%, string$ [, scale_x%, scale_y%] [, color%]
-#+END_SRC haskell
+#+END_SRC
