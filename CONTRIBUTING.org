@@ -10,7 +10,11 @@ For help setting up git on command line (e.g. for editing orgmode files in emacs
 *Note that by contributing to the project, you agree to waive all legal rights to the content you contribute where applicable by law, under the [[https://creativecommons.org/publicdomain/zero/1.0/legalcode][Creative Commons CC0 Universal License]].*
 
 
-** Code guidelines
+** SmileBASIC Code guidelines
  - Use 2 spaces for indentation
  - Use capitalized identifiers
  - Avoid type suffixes where unnecessary
+
+** Org-mode Guidelines
+ - Use tabs for indentation
+ - there's not much you can screw up here
