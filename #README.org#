@@ -1,0 +1,45 @@
+* SmileBASIC Wiki temporary location
+
+** Important Reading
+The following articles contain highly recommended pre-reading material regarding SmileBASIC fundamentals and internals that aid understanding of the rest of the documentation.
++ [[/notes/Syntax.org][Syntax Notation Used In This Guide]]
++ [[/notes/Variables.org][Variables and Types]]
++ [[/notes/Functions.org][Functions]]
++ [[/notes/Scope.org][Scope]]
++ [[/notes/Compiler.org][Compilation]]
++ [[/notes/Colors.org][Color Formats]]
+
+** Table of Contents:
++ [[/CONTROL/][Control Flow]]
+	- [[/CONTROL/WHILE.org][WHILE]]
++ [[/MATH/][Math]]
+
+	- [[/MATH/RANDOMIZE.org][RANDOMIZE]]
+	- [[/MATH/RND.org][RND]]
+	- [[/MATH/RNDF.org][RNDF]]
++ [[/STRING/][String]]
++ [[/SPRITE/][Sprite]]
++ [[/BG/][BG]]
++ [[/SOUND/][Sound]]
++ [[/FILE/][File]]
++ [[/INPUT/][INPUT & HW]]
++ [[/MULTIPLAYER/][Multiplayer]]
++ [[/DLC/][DLC]]
+	- [[/DLC/SOUNDPROCESSING/][Sound Processing Unit]]
+		* [[/DLC/SOUNDPROCESSING/ARYOP][ARYOP]]
+** Lists
++ [[/Operators.org][Operators]]
++ [[/Error.org][Errors]]
++ [[/Constants.org][Constants]]
+
+* Contributing
+Please write documentation in [[https://orgmode.org/manual/index.html#Top][Org Mode]].  
+A tutorial can be found [[https://github.com/y-ack/puchikon-no-hata/blob/master/org-help.org][here]].
+
+For help setting up git on command line (e.g. for editing orgmode files in emacs) see [[git-help.org]]
+
+Note that by contributing to the project, you agree to dedicate your contributions to the public domain where applicable by law, under the [[https://creativecommons.org/publicdomain/zero/1.0/legalcode][Creative Commons CC0 Universal License]].
+
+For more information on contributing, see [[/CONTRIBUTING.org][CONTRIBUTING]]
+
+[[https://licensebuttons.net/l/zero/1.0/88x15.png]]
