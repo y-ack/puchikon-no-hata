@@ -1,0 +1,73 @@
+#+TEMPLATE_VERSION: 1.12
+#+OPTIONS: f:t
+
+# PLATFORM INFO TEMPLATES
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on 3DS
+#+END_SRC
+#+BEGIN_COMMENT # did I mention that org-ruby is broken
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on Wii U
+#+END_SRC
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on Pasocom Mini
+#+END_SRC
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on *Starter
+#+END_SRC
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on Switch
+#+END_SRC
+#+END_COMMENT
+
+# modify these to display the category name and link to the previous and next pages.
+# REMEMBER TO COPY IT TO THE FOOTER AS WELL
+[[/][Top]] | [[../][Up (MATH)]] | [[PREVIOUS.org][< Previous (PAGE NAME)]] | [[NEXT.org][Next (PAGE NAME) >]]
+
+* SGN
+Returns the sign of a number (-1, 0, or 1).
+
+** Syntax
+# use haskell as language for syntax examples as a gross workaround for github being the worst
+#+BEGIN_SRC haskell
+SGN number# OUT sign#
+#+END_SRC
+
+# if alternate syntax is needed, list it in the same way. Use OUT for one-return forms
+
+# describe the arguments here, if necessary.  at minimum, describe types
+| parameter | description |
+|-----------+-------------|
+| number#     | The number to get the sign of |
+
+
+| output | description |
+|-----------+-------------|
+| sign#     | The sign of number# (-1, 0, or 1) |
+
+
+| numbers | sign |
+|-----------+-------------|
+| positive | 1 |
+| negative | -1 |
+| 0     | 0 |
+| -0 | 0 |
+| infinity | 1 |
+| -infinity | -1 |
+| NaN | 1 |
+
+
+** Examples
+#+BEGIN_SRC smilebasic
+PRINT SGN(10) '1
+PRINT SGN(-EXP(999)) '-1
+#+END_SRC
+
+# If the page is longer than one screen height or so, add a navigation bar at the bottom of the page as well
+# (if the page is short you may omit this)
+-----
+[[/][Top]] | [[../][Up (MATH)]] | [[PREVIOUS.org][< Previous (PAGE NAME)]] | [[NEXT.org][Next (PAGE NAME) >]]
