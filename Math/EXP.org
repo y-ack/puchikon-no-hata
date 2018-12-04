@@ -31,7 +31,7 @@
 * EXP
 Returns a power of /[[https://en.wikipedia.org/wiki/E_(mathematical_constant)][e]]/.
 
-Eqivilant to =POW(2.7182818284590451, exponent#)=.\\
+Equivalent to =POW(2.7182818284590451, exponent#)=.\\
 The exponent is optional and defaults to 1, so =EXP()= returns /e/.
 
 =EXP(999)= is the shortest way to get infinity.
