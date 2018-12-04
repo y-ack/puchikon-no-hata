@@ -11,20 +11,11 @@ Checks if a number is infinity or NaN.
 CLASSIFY number# OUT group#
 #+END_SRC
 
-| parameter | description |
-|-----------+-------------|
-| number#     | the number to check |
+| parameter  | description |
+|-----------+----------|
+| number#     | the number to check      |
 
-
-|group#|meaning|
-|-+-|
-| 0 | regular number |
-|-+-|
-| 1 | infinity or -infinity |
-|-+-|
-| 2 | NaN |
-
-# #+HTML: <table><tr><th>Output</th><th>Description</th></tr><tr><td><code>group#</code></td><td><table><tr><th>Value</th><th>Meaning</th></tr><tr><td>0</td><td>Regular number</td></tr><tr><td>1</td><td>Infinity or -infinity</td></tr><tr><td>2</td><td>NaN</td></tr></table></td></tr></table>
+#+HTML: <table><tr><th>Output</th><th>Description</th></tr><tr><td><code>group#</code></td><td><table><tr><th>Value</th><th>Meaning</th></tr><tr><td>0</td><td>Regular number</td></tr><tr><td>1</td><td>Infinity or -infinity</td></tr><tr><td>2</td><td>NaN</td></tr></table></td></tr></table>
 
 ** Examples
 #+BEGIN_SRC smilebasic
