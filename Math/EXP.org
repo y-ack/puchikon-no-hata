@@ -1,0 +1,57 @@
+#+TEMPLATE_VERSION: 1.12
+#+OPTIONS: f:t
+
+# PLATFORM INFO TEMPLATES
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on 3DS
+#+END_SRC
+#+BEGIN_COMMENT # did I mention that org-ruby is broken
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on Wii U
+#+END_SRC
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on Pasocom Mini
+#+END_SRC
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on *Starter
+#+END_SRC
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on Switch
+#+END_SRC
+#+END_COMMENT
+
+# modify these to display the category name and link to the previous and next pages.
+# REMEMBER TO COPY IT TO THE FOOTER AS WELL
+[[/][Top]] | [[../][Up (CATEGORY)]] | [[PREVIOUS.org][< Previous (PAGE NAME)]] | [[NEXT.org][Next (PAGE NAME) >]]
+
+* EXP
+Returns a power of /[[https://en.wikipedia.org/wiki/E_(mathematical_constant)][e]]/.
+
+Eqivilant to =POW(2.7182818284590451, exponent#)=.\\
+The exponent is optional and defaults to 1, so =EXP()= returns /e/.
+
+=EXP(999)= is the shortest way to get infinity.
+
+** Syntax
+# use haskell as language for syntax examples as a gross workaround for github being the worst
+#+BEGIN_SRC haskell
+EXP [exponent#] OUT power#
+#+END_SRC
+
+# if alternate syntax is needed, list it in the same way. Use OUT for one-return forms
+
+# describe the arguments here, if necessary.  at minimum, describe types
+| parameter | description |
+|-----------+-------------|
+| exponent# | Exponent. Defaults to 1. |
+
+** Examples
+#+BEGIN_SRC smilebasic
+E = EXP()
+PRINT EXP(12)
+PRINT POW(E,12)
+#+END_SRC
