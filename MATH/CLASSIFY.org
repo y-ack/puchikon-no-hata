@@ -1,7 +1,7 @@
 #+TEMPLATE_VERSION: 1.12
 #+OPTIONS: f:t
 
-[[/][Top]] | [[../][Up (MATH)]] | [[POW.org][< Previous (POW)]] | [[NEXT.org][Next (PAGE NAME) >]]
+[[/][Top]] | [[./][Up (MATH)]] | [[POW.org][< Previous (POW)]] | [[NEXT.org][Next (PAGE NAME) >]]
 
 * CLASSIFY
 Checks if a number is infinity or NaN.
