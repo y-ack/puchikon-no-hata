@@ -1,0 +1,44 @@
+#+TEMPLATE_VERSION: 1.12
+#+OPTIONS: f:t
+
+[[/][Top]] | [[../][Up (MATH)]] | [[POW.org][< Previous (POW)]] | [[NEXT.org][Next (PAGE NAME) >]]
+
+* CLASSIFY
+Checks if a number is infinity or NaN.
+
+** Syntax
+#+BEGIN_SRC haskell
+CLASSIFY number# OUT group#
+#+END_SRC
+
+| parameter | description |
+|-----------+-------------|
+| number#     | the number to check |
+
+
+|group#|meaning|
+|-+-|
+| 0 | regular number |
+|-+-|
+| 1 | infinity or -infinity |
+|-+-|
+| 2 | NaN |
+
+** Examples
+#+BEGIN_SRC smilebasic
+PRINT CLASSIFY(10) '0 (normal)
+PRINT CLASSIFY(EXP(999)) '1 (infinity)
+PRINT CLASSIFY(EXP(999)*0) '2 (nan)
+#+END_SRC
+
+** Version Information
+# include this table even if there is only one entry
++ [[#310][3.1.0]]
+*** 3.1.0
+Introduced.[fn:1]
+
+** References
+[fn:1] SmileBoom, "Additions/Changes in Ver. 3.1.0 (March 4, 2015)." http://smilebasic.com/en/debug/archive/
+
+-----
+[[/][Top]] | [[../][Up (MATH)]] | [[POW.org][< Previous (POW)]] | [[NEXT.org][Next (PAGE NAME) >]]
