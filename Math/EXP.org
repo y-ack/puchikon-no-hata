@@ -47,7 +47,7 @@ EXP [exponent#] OUT power#
 # describe the arguments here, if necessary.  at minimum, describe types
 | parameter | description |
 |-----------+-------------|
-| exponent# | Exponent. Defaults to 1. |
+| exponent# | Any number. Defaults to 1. |
 
 ** Examples
 #+BEGIN_SRC smilebasic
