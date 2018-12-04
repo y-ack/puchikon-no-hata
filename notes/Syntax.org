@@ -4,7 +4,7 @@ Syntax conventions used in this guide:
 | Notation            | Meaning                                 | Syntax example                     | Sample entry       |
 |---------------------+-----------------------------------------+------------------------------------+--------------------|
 | Uppercase           | Keyword; enter as shown                 | =PRINT=                            | =PRINT=              |
-| Lowercase parameter | Parameter name; substitute a value      | =PRINT value=                      | =PRINT "TEXT"​=       |
+| Lowercase parameter | Parameter name; substitute a value      | =PRINT value=                      | =PRINT "Text"​=       |
 | OUT keyword         | enter as shown (return values follow)   | =BACKCOLOR OUT color%=             | =BACKCOLOR OUT C=    |
 | % parameter suffix  | Integer type parameter                  | =CHR$ code% OUT char$=             | =C$ = CHR$(65)=      |
 | # parameter suffix  | Real type parameter                     | =RAD angle# OUT radians=           | =A = RAD(73.22)=     |

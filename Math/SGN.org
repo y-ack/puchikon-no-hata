@@ -1,4 +1,4 @@
-#+TEMPLATE_VERSION: 1.1
+#+TEMPLATE_VERSION: 1.12
 #+OPTIONS: f:t
 
 # PLATFORM INFO TEMPLATES
@@ -26,15 +26,15 @@
 
 # modify these to display the category name and link to the previous and next pages.
 # REMEMBER TO COPY IT TO THE FOOTER AS WELL
-[[/][Top]] | [[./][Up (MATH)]] | [[RANDOMIZE.org][< Previous (RANDOMIZE)]] | [[RNDF.org][Next (RNDF) >]]
+[[/][Top]] | [[../][Up (Math)]] | [[PREVIOUS.org][< Previous (PAGE NAME)]] | [[NEXT.org][Next (PAGE NAME) >]]
 
-* RND
-Returns a random integer from 0 to a specified maximum (exclusive), using one of the [[RANDOMIZE.org][randomizer channels]].
+* SGN
+Returns the sign of a number (-1, 0, or 1).
 
 ** Syntax
 # use haskell as language for syntax examples as a gross workaround for github being the worst
 #+BEGIN_SRC haskell
-RND [ channel%, ] range% OUT value%
+SGN number# OUT sign#
 #+END_SRC
 
 # if alternate syntax is needed, list it in the same way. Use OUT for one-return forms
@@ -42,34 +42,32 @@ RND [ channel%, ] range% OUT value%
 # describe the arguments here, if necessary.  at minimum, describe types
 | parameter | description |
 |-----------+-------------|
-| channel%  | randomizer channel to use; 0 if omitted |
-| range%    | the number of values to choose from |
+| number#     | The number to get the sign of |
+
+
+| output | description |
+|-----------+-------------|
+| sign#     | The sign of number# (-1, 0, or 1) |
+
+
+| numbers | sign |
+|-----------+-------------|
+| positive | 1 |
+| negative | -1 |
+| 0     | 0 |
+| -0 | 0 |
+| infinity | 1 |
+| -infinity | -1 |
+| NaN | 1 |
 
 
 ** Examples
-Print a random number from 1 to 6:
 #+BEGIN_SRC smilebasic
-PRINT RND(6)+1
+PRINT SGN(10) '1
+PRINT SGN(-EXP(999)) '-1
 #+END_SRC
-
-# ! IF VERSION DIFFERENCES EXIST !
-# use the headings below.  Include bugs.
-** Version Information
-# include this table even if there is only one entry
-+ [[#300][3.0.0]]
-+ [[#302][3.0.2]]
-*** 3.0.0
-Passing a range of 0 to RND would result in garbage output.[fn:2]
-
-*** 3.0.2
-Fixes range-0 bug.[fn:2]
-
-** References
-[fn:1] 12Me21, "Random Numbers." https://smilebasicsource.com/page?pid=992 \\
-[fn:2] SmileBoom, "Fixes in Ver. 3.0.2 (January 7, 2015)." http://smilebasic.com/en/debug/archive/
-
 
 # If the page is longer than one screen height or so, add a navigation bar at the bottom of the page as well
 # (if the page is short you may omit this)
 -----
-[[/][Top]] | [[./][Up (MATH)]] | [[RANDOMIZE.org][< Previous (RANDOMIZE)]] | [[RNDF.org][Next (RNDF) >]]
+[[/][Top]] | [[../][Up (Math)]] | [[PREVIOUS.org][< Previous (PAGE NAME)]] | [[NEXT.org][Next (PAGE NAME) >]]

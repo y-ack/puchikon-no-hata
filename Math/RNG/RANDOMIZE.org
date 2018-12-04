@@ -3,7 +3,7 @@
 
 # modify these to display the category name and link to the previous and next pages.
 # REMEMBER TO COPY IT TO THE FOOTER AS WELL
-[[/][Top]] | [[./][Up (MATH)]] | [[PREVIOUS.org][< Previous (PAGE NAME)]] | [[RND.org][Next (RND) >]]
+[[/][Top]] | [[./][Up (Math)]] | [[PREVIOUS.org][< Previous (PAGE NAME)]] | [[RND.org][Next (RND) >]]
 
 * RANDOMIZE
 Sets the randomizer seed of one of the 8 RNG channels.
@@ -35,4 +35,4 @@ RANDOMIZE 1, 398
 # If the page is longer than one screen height or so, add a navigation bar at the bottom of the page as well
 # (if the page is short you may omit this)
 -----
-[[/][Top]] | [[./][Up (MATH)]] | [[PREVIOUS.org][< Previous (PAGE NAME)]] | [[RND.org][Next (RND) >]]
+[[/][Top]] | [[./][Up (Math)]] | [[PREVIOUS.org][< Previous (PAGE NAME)]] | [[RND.org][Next (RND) >]]
