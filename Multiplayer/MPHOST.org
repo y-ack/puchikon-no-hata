@@ -26,7 +26,7 @@
 
 # modify these to display the category name and link to the previous and next pages.
 # REMEMBER TO COPY IT TO THE FOOTER AS WELL
-[[/][Top]] | [[../][Up (Multiplayer)]] | [[PREVIOUS.org][< Previous (PAGE NAME)]] | [[NEXT.org][Next (PAGE NAME) >]]
+[[/][Top]] | [[./][Up (Multiplayer)]] | [[PREVIOUS.org][< Previous (PAGE NAME)]] | [[NEXT.org][Next (PAGE NAME) >]]
 
 * MPHOST
 System variable. Contains the ID of the local multiplayer host system. =-1= if multiplayer is not enabled.
