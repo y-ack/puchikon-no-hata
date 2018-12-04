@@ -1,0 +1,47 @@
+#+TEMPLATE_VERSION: 1.12
+#+OPTIONS: f:t
+
+# PLATFORM INFO TEMPLATES
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on 3DS
+#+END_SRC
+#+BEGIN_COMMENT # did I mention that org-ruby is broken
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on Wii U
+#+END_SRC
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on Pasocom Mini
+#+END_SRC
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on *Starter
+#+END_SRC
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on Switch
+#+END_SRC
+#+END_COMMENT
+
+# modify these to display the category name and link to the previous and next pages.
+# REMEMBER TO COPY IT TO THE FOOTER AS WELL
+[[/][Top]] | [[../][Up (CATEGORY)]] | [[PREVIOUS.org][< Previous (PAGE NAME)]] | [[SGN.org][Next (SGN) >]]
+
+* ABS
+Returns the absolute value of a number (basically, this means removing the =-= sign).\\
+=ABS(NaN)= is =NaN=.
+
+** Syntax
+# use haskell as language for syntax examples as a gross workaround for github being the worst
+#+BEGIN_SRC haskell
+ABS number# OUT absolute_value#
+#+END_SRC
+
+# if alternate syntax is needed, list it in the same way. Use OUT for one-return forms
+
+** Examples
+#+BEGIN_SRC smilebasic
+PRINT ABS(10) '10
+PRINT ABS(-10) '10
+#+END_SRC
