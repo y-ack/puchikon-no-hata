@@ -34,4 +34,4 @@ Introduced.[fn:1]
 [fn:1] SmileBoom, "Additions/Changes in Ver. 3.1.0 (March 4, 2015)." http://smilebasic.com/en/debug/archive/
 
 -----
-[[/][Top]] | [[../][Up (MATH)]] | [[POW.org][< Previous (POW)]] | [[NEXT.org][Next (PAGE NAME) >]]
+[[/][Top]] | [[./][Up (MATH)]] | [[POW.org][< Previous (POW)]] | [[NEXT.org][Next (PAGE NAME) >]]
