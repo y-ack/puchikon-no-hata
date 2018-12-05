@@ -29,7 +29,7 @@
 [[/][Top]] | [[./][Up (Math)]] | [[RANDOMIZE.org][< Previous (RANDOMIZE)]] | [[RNDF.org][Next (RNDF) >]]
 
 * RND
-Returns a random integer from 0 to a specified maximum (exclusive), using one of the [[RANDOMIZE.org][randomizer channels]].
+Returns a random integer in =[0,range)= (~0~ to ~range-1~), using one of the [[RANDOMIZE.org][randomizer channels]].
 
 ** Syntax
 # use haskell as language for syntax examples as a gross workaround for github being the worst
