@@ -1,0 +1,69 @@
+#+TEMPLATE_VERSION: 1.12
+#+OPTIONS: f:t
+
+# PLATFORM INFO TEMPLATES
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on 3DS
+#+END_SRC
+#+BEGIN_COMMENT # did I mention that org-ruby is broken
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on Wii U
+#+END_SRC
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on Pasocom Mini
+#+END_SRC
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on *Starter
+#+END_SRC
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on Switch
+#+END_SRC
+#+END_COMMENT
+
+# modify these to display the category name and link to the previous and next pages.
+# REMEMBER TO COPY IT TO THE FOOTER AS WELL
+[[/][Top]] | [[./][Up (CATEGORY)]] | [[MAX.org][< Previous (MAX)]] | [[EXP.org][Next (EXP) >]]
+
+* SQR
+Square root.
+
+** Syntax
+# use haskell as language for syntax examples as a gross workaround for github being the worst
+#+BEGIN_SRC haskell
+SQR number# OUT square_root#
+#+END_SRC
+
+# if alternate syntax is needed, list it in the same way. Use OUT for one-return forms
+
+# describe the arguments here, if necessary.  at minimum, describe types
+| parameter | description |
+|-----------+-------------|
+| number# | A non-negative number |
+
+** Examples
+#+BEGIN_SRC smilebasic
+PRINT SQR(25) '5
+X=SQR(2)
+PRINT X*X '2
+#+END_SRC
+
+# ! IF VERSION DIFFERENCES EXIST !
+# use the headings below.  Include bugs.
+** Version Information
+# include this table even if there is only one entry
++ [[#320][3.2.0]]
+
+*** 3.2.0
+Duplicate function =SQRT= was removed [fn:1]
+
+** References
+[fn:1] SmileBoom, "Compatibility notes until Ver.3.3.2 (As of August 10, 2016)" http://smilebasic.com/en/debug/archive/
+
+# If the page is longer than one screen height or so, add a navigation bar at the bottom of the page as well
+# (if the page is short you may omit this)
+-----
+[[/][Top]] | [[./][Up (CATEGORY)]] | [[MAX.org][< Previous (MAX)]] | [[EXP.org][Next (EXP) >]]
