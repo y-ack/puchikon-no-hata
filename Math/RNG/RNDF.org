@@ -3,7 +3,7 @@
 
 # modify these to display the category name and link to the previous and next pages.
 # REMEMBER TO COPY IT TO THE FOOTER AS WELL
-[[/][Top]] | [[./][Up (Math)]] | [[RND.org][< Previous (RND)]] | [[NEXT.org][Next (PAGE NAME) >]]
+[[/][Top]] | [[./][Up (RNG)]] | [[RND.org][< Previous (RND)]] | [[NEXT.org][Next (PAGE NAME) >]]
 
 * RNDF
 Return a real number between 0.0 and 1.0, optionally using a seeded [[RANDOMIZE.org][randomizer channel]].
@@ -33,4 +33,4 @@ PRINT RNDF()
 # If the page is longer than one screen height or so, add a navigation bar at the bottom of the page as well
 # (if the page is short you may omit this)
 -----
-[[/][Top]] | [[./][Up (Math)]] | [[RND.org][< Previous (RND)]] | [[NEXT.org][Next (PAGE NAME) >]]
+[[/][Top]] | [[./][Up (RNG)]] | [[RND.org][< Previous (RND)]] | [[NEXT.org][Next (PAGE NAME) >]]
