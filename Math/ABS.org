@@ -29,13 +29,13 @@
 [[/][Top]] | [[../][Up (CATEGORY)]] | [[PREVIOUS.org][< Previous (PAGE NAME)]] | [[SGN.org][Next (SGN) >]]
 
 * ABS
-Returns the absolute value of a number (basically, this means removing the =-= sign).\\
-=ABS(NaN)= is =NaN=.
+Returns the absolute value of a number (basically, this means removing the ~-~ sign).\\
+~ABS(NaN)~ is ~NaN~.  ~ABS(-2147483648)~ is ~-2147483648~ due to the size of the integer space.
 
 ** Syntax
 # use haskell as language for syntax examples as a gross workaround for github being the worst
 #+BEGIN_SRC haskell
-ABS number# OUT absolute_value#
+ABS number OUT absolute_value
 #+END_SRC
 
 # if alternate syntax is needed, list it in the same way. Use OUT for one-return forms
@@ -44,4 +44,5 @@ ABS number# OUT absolute_value#
 #+BEGIN_SRC smilebasic
 PRINT ABS(10) '10
 PRINT ABS(-10) '10
+PRINT ABS(-1.5) '1.5
 #+END_SRC
