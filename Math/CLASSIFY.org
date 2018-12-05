@@ -8,14 +8,14 @@ Checks if a number is infinity or NaN.
 
 ** Syntax
 #+BEGIN_SRC haskell
-CLASSIFY number# OUT group#
+CLASSIFY number# OUT group%
 #+END_SRC
 
 | parameter  | description |
 |-----------+----------|
 | number#     | the number to check      |
 
-#+HTML: <table><tr><th>Output</th><th>Description</th></tr><tr><td><code>group#</code></td><td><table><tr><th>Value</th><th>Meaning</th></tr><tr><td>0</td><td>Regular number</td></tr><tr><td>1</td><td>Infinity or -infinity</td></tr><tr><td>2</td><td>NaN</td></tr></table></td></tr></table>
+#+HTML: <table><tr><th>Output</th><th>Description</th></tr><tr><td><code>group%</code></td><td><table><tr><th>Value</th><th>Meaning</th></tr><tr><td>0</td><td>Regular number</td></tr><tr><td>1</td><td>Infinity or -infinity</td></tr><tr><td>2</td><td>NaN</td></tr></table></td></tr></table>
 
 ** Examples
 #+BEGIN_SRC smilebasic
