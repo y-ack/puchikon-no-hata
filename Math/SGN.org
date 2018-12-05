@@ -34,7 +34,7 @@ Returns the sign of a number (-1, 0, or 1).
 ** Syntax
 # use haskell as language for syntax examples as a gross workaround for github being the worst
 #+BEGIN_SRC haskell
-SGN number# OUT sign#
+SGN number# OUT sign%
 #+END_SRC
 
 # if alternate syntax is needed, list it in the same way. Use OUT for one-return forms
@@ -47,7 +47,7 @@ SGN number# OUT sign#
 
 | output | description |
 |-----------+-------------|
-| sign#     | The sign of number# (-1, 0, or 1) |
+| sign%     | The sign of number# (-1, 0, or 1) |
 
 
 | numbers | sign |
