@@ -26,7 +26,7 @@
 
 # modify these to display the category name and link to the previous and next pages.
 # REMEMBER TO COPY IT TO THE FOOTER AS WELL
-[[/][Top]] | [[./][Up (Math)]] | [[RANDOMIZE.org][< Previous (RANDOMIZE)]] | [[RNDF.org][Next (RNDF) >]]
+[[/][Top]] | [[./][Up (RNG)]] | [[RANDOMIZE.org][< Previous (RANDOMIZE)]] | [[RNDF.org][Next (RNDF) >]]
 
 * RND
 Returns a random integer in =[0,range)= (~0~ to ~range-1~), using one of the [[RANDOMIZE.org][randomizer channels]].
@@ -72,4 +72,4 @@ Fixes range-0 bug.[fn:2]
 # If the page is longer than one screen height or so, add a navigation bar at the bottom of the page as well
 # (if the page is short you may omit this)
 -----
-[[/][Top]] | [[./][Up (Math)]] | [[RANDOMIZE.org][< Previous (RANDOMIZE)]] | [[RNDF.org][Next (RNDF) >]]
+[[/][Top]] | [[./][Up (RNG)]] | [[RANDOMIZE.org][< Previous (RANDOMIZE)]] | [[RNDF.org][Next (RNDF) >]]
