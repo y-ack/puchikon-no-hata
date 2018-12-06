@@ -1,0 +1,77 @@
+#+TEMPLATE_VERSION: 1.12
+#+OPTIONS: f:t
+
+# PLATFORM INFO TEMPLATES
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on 3DS
+#+END_SRC
+#+BEGIN_COMMENT # did I mention that org-ruby is broken
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on Wii U
+#+END_SRC
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on Pasocom Mini
+#+END_SRC
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on *Starter
+#+END_SRC
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on Switch
+#+END_SRC
+#+END_COMMENT
+
+# modify these to display the category name and link to the previous and next pages.
+# REMEMBER TO COPY IT TO THE FOOTER AS WELL
+[[/][Top]] | [[./][Up (Operators)]] | [[PREVIOUS.org][< Previous (PAGE NAME)]] | [[DEC.org][Next (DEC) >]]
+
+* INC
+Adds a value to a variable. Works on numbers and strings.\\
+
+** Syntax
+# use haskell as language for syntax examples as a gross workaround for github being the worst
+#+BEGIN_SRC haskell
+INC number_variable [, amount]
+INC string_variable$, string$
+#+END_SRC
+
+=INC variable, amount= is a shorter way of writing =variable = variable + amount= (similar to =variable +=​ amount= in other languages).
+=amount= is 1 if omitted.
+
+When used on strings, =INC= works the same as =PUSH= (but slightly faster). Either way is more efficient than =+= because they modify the string rather than making a copy.
+
+** Examples
+#+BEGIN_SRC smilebasic
+X=13
+INC X
+PRINT X '14
+
+S$="abc"
+INC S$,"defg"
+PRINT S$ 'abcdefg
+#+END_SRC
+
+# ! IF VERSION DIFFERENCES EXIST !
+# use the headings below.  Include bugs.
+** Version Information
+# include this table even if there is only one entry
++ [[#320][3.2.0]]
++ [[#330][3.3.0]]
+
+*** 3.2.0
+Using INC on a string literal which was passed to a function no longer crashes. [fn:1]
+
+*** 3.3.0
+Fixed bugs caused by using INC or DEC on a system variable.
+
+** References
+[fn:1] SmileBoom, "Fixes in Ver. 3.2.0 (June 17, 2015)" http://smilebasic.com/en/debug/archive/
+[fn:2] SmileBoom, "Bug Fixes in Ver. 3.3.0 (April 26, 2016)" http://smilebasic.com/en/debug/archive/
+
+# If the page is longer than one screen height or so, add a navigation bar at the bottom of the page as well
+# (if the page is short you may omit this)
+-----
+[[/][Top]] | [[./][Up (Operators)]] | [[PREVIOUS.org][< Previous (PAGE NAME)]] | [[DEC.org][Next (DEC) >]]
