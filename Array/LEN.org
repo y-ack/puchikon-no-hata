@@ -1,0 +1,50 @@
+#+TEMPLATE_VERSION: 1.12
+#+OPTIONS: f:t
+
+# PLATFORM INFO TEMPLATES
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on 3DS
+#+END_SRC
+#+BEGIN_COMMENT # did I mention that org-ruby is broken
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on Wii U
+#+END_SRC
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on Pasocom Mini
+#+END_SRC
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on *Starter
+#+END_SRC
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on Switch
+#+END_SRC
+#+END_COMMENT
+
+# modify these to display the category name and link to the previous and next pages.
+# REMEMBER TO COPY IT TO THE FOOTER AS WELL
+[[/][Top]] | [[./][Up (Array)]] | [[PREVIOUS.org][< Previous (PAGE NAME)]] | [[NEXT.org][Next (PAGE NAME) >]]
+
+* LEN
+Checks the length of a string or array.\\
+For multidimensional arrays, LEN returns the total number of items in the array.
+There is no way to find the number of dimensions in an array, or to check the size of a specific dimension.
+
+** Syntax
+# use haskell as language for syntax examples as a gross workaround for github being the worst
+#+BEGIN_SRC haskell
+LEN string$ OUT leng​th%
+LEN array[] OUT len​gth%
+#+END_SRC
+
+** Examples
+#+BEGIN_SRC smilebasic
+PRINT LEN("test") '4
+DIM A[7]
+PRINT LEN(A) '7
+DIM B[4,3]
+PRINT LEN(B) '12
+#+END_SRC
