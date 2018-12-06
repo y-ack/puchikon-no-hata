@@ -49,8 +49,22 @@ The following articles contain highly recommended pre-reading material regarding
 		- [[/Math/RNG/RND.org][RND]]
 		- [[/Math/RNG/RNDF.org][RNDF]]
 + [[/String/][String]]
+	- ASC
+	- CHR$
+	- VAL
+	- STR$
+	- HEX$
+	- BIN$
+	- FORMAT$
+	- [[/Array/LEN.org][LEN]]
+	- MID$
+	- LEFT$
+	- RIGHT$
+	- SUBST$
+	- INSTR
 + [[/Array/][Array]]
 	- [[/DLC/SoundPROCESSING/ARYOP.org][ARYOP]]
+	- [[/Array/LEN.org][LEN]]
 + [[/Graphics/][Graphics]]
 	- [[/Graphics/RGB.org][RGB]]
 	- [[/Graphics/RGBREAD.org][RGBREAD]]
