@@ -51,8 +51,8 @@ The following articles contain highly recommended pre-reading material regarding
 + [[/String/][String]]
 	- ASC
 	- CHR$
-	- [[/Array/VAL.org][VAL]]
-	- STR$
+	- [[/String/VAL.org][VAL]]
+	- [[/String/STR$.org][STR$]]
 	- HEX$
 	- BIN$
 	- FORMAT$
