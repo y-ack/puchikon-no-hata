@@ -54,7 +54,7 @@ The following articles contain highly recommended pre-reading material regarding
 	- [[/String/VAL.org][VAL]]
 	- [[/String/STR$.org][STR$]]
 	- FORMAT$
-  - HEX$
+	- HEX$
 	- BIN$
 	- [[/Array/LEN.org][LEN]]
 	- [[/Math/Operators/INC.org][INC]]
