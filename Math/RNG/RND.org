@@ -43,7 +43,7 @@ RND [ channel%, ] range% OUT value%
 | parameter | description |
 |-----------+-------------|
 | channel%  | randomizer channel to use; 0 if omitted |
-| range%    | the number of values to choose from |
+| range%    | the number of values to choose from. =0= to =2147483647=. =RND= returns =0= if =range%= is =0=. |
 
 
 ** Examples
