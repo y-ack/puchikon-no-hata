@@ -43,7 +43,7 @@ ROUND integer% OUT integer%
 ** Examples
 #+BEGIN_SRC smilebasic
 PRINT ROUND(6.2) '6
-PRINT ROUND(10.5) '10
+PRINT ROUND(10.5) '11
 PRINT ROUND(-2.5) '-3
 #+END_SRC
 
