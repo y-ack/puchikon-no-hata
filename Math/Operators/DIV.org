@@ -30,7 +30,7 @@
 
 * DIV
 Integer division.\\
-=a DIV b= = =INT( INT(a) / INT(b) )=, where `INT` rounds towards 0.
+=a DIV b= = =INT( INT(a) / INT(b) )=, where =INT= rounds towards 0.
 
 ** Syntax
 # use haskell as language for syntax examples as a gross workaround for github being the worst
