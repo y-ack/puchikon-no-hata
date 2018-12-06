@@ -93,4 +93,6 @@ A tutorial can be found [[https://github.com/y-ack/puchikon-no-hata/blob/master/
 
 For help setting up git on command line (e.g. for editing orgmode files in emacs) see [[git-help.org]]
 
+*Note that by contributing to the project, you dedicate your contribution to the public domain and agree to waive all copyright and related rights to the content you contribute.*
+
 For more information on contributing, see [[/CONTRIBUTING.org][CONTRIBUTING]]
