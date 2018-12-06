@@ -6,7 +6,7 @@
 [[/][Top]] | [[./][Up (RNG)]] | [[RND.org][< Previous (RND)]] | [[NEXT.org][Next (PAGE NAME) >]]
 
 * RNDF
-Return a real number between 0.0 and 1.0, optionally using a seeded [[RANDOMIZE.org][randomizer channel]].
+Returns a random number between 0.0 and 1.0 (not including 1.0), optionally using a seeded [[RANDOMIZE.org][randomizer channel]].
 
 ** Syntax
 # use haskell as language for syntax examples as a gross workaround for github being the worst
