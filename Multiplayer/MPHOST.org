@@ -34,6 +34,7 @@ System variable. Contains the ID of the local multiplayer host system. =-1= if m
 The host system always has an ID of =0=, but you should still use =MPHOST= just in case.
 
 ** Examples
+Checking if you are the multiplayer host:
 #+BEGIN_SRC smilebasic
 MPSTART 2," "
 IF MPHOST==MPLOCAL THEN PRINT "HOST"
