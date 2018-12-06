@@ -1,0 +1,77 @@
+#+TEMPLATE_VERSION: 1.12
+#+OPTIONS: f:t
+
+# PLATFORM INFO TEMPLATES
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on 3DS
+#+END_SRC
+#+BEGIN_COMMENT # did I mention that org-ruby is broken
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on Wii U
+#+END_SRC
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on Pasocom Mini
+#+END_SRC
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on *Starter
+#+END_SRC
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on Switch
+#+END_SRC
+#+END_COMMENT
+
+# modify these to display the category name and link to the previous and next pages.
+# REMEMBER TO COPY IT TO THE FOOTER AS WELL
+[[/][Top]] | [[./][Up (String)]] | [[CHR$.org][< Previous (CHR$)]] | [[STR$.org][Next (STR$) >]]
+
+* VAL
+Converts a string to a number.
+
+** Syntax
+# use haskell as language for syntax examples as a gross workaround for github being the worst
+#+BEGIN_SRC haskell
+VAL string$ OUT number
+#+END_SRC
+
+# if alternate syntax is needed, list it in the same way. Use OUT for one-return forms
+
+# describe the arguments here, if necessary.  at minimum, describe types
+| Parameter | Description |
+|-----------+-------------|
+| string$ | A string containing a number. |
+
+Any number format that SB supports can be used.
+
+=VAL= has weird restrictions:
+
+- Spaces before the number are allowed.
+- If the number is a hexadecimal or binary integer (=&B...= or =&H...=), a line break or comma followed by any characters is allowed after the number.
+- If the number is a decimal integer, =!= is also allowed.
+- If the number is a float ending with =.= or =#=, any characters are allowed after the number.
+- If the number is any other float, any characters except =E= and =e= are allowed after the number.
+
+** Examples
+#+BEGIN_SRC smilebasic
+PRINT VAL("10")
+PRINT VAL("&HDEADBEEF")
+#+END_SRC
+
+# ! IF VERSION DIFFERENCES EXIST !
+# use the headings below.  Include bugs.
+** Version Information
+# include this table even if there is only one entry
++ [[#330][3.3.0]]
+*** 3.3.0
+More bugs were added to VAL [fn:1]
+
+** References
+[fn:1] SmileBoom, "Bug Fixes in Ver. 3.3.0 (April 26, 2016)" http://smilebasic.com/debug/archive/
+
+# If the page is longer than one screen height or so, add a navigation bar at the bottom of the page as well
+# (if the page is short you may omit this)
+-----
+[[/][Top]] | [[./][Up (String)]] | [[CHR$.org][< Previous (CHR$)]] | [[STR$.org][Next (STR$) >]]
