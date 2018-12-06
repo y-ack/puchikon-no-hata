@@ -51,7 +51,7 @@ The following articles contain highly recommended pre-reading material regarding
 + [[/String/][String]]
 	- ASC
 	- CHR$
-	- VAL
+	- [[/Array/VAL.org][VAL]]
 	- STR$
 	- HEX$
 	- BIN$
