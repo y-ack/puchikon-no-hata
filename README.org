@@ -57,6 +57,7 @@ The following articles contain highly recommended pre-reading material regarding
 	- BIN$
 	- FORMAT$
 	- [[/Array/LEN.org][LEN]]
+	- [[/Math/Operators/INC.org][INC]]
 	- MID$
 	- LEFT$
 	- RIGHT$
