@@ -29,7 +29,8 @@ Describe briefly the topic
  - [[SUBST$][SUBST$]]
 
 Provide more detail about intricacies of the feature/topic (but do not restate information covered by instruction pages)
-Include results of operators, edge cases, likely examples of use
+Include results of operators, edge cases, likely examples of use.
+
 Showing small algorithms and programs is fine too
 
 # if any \\
