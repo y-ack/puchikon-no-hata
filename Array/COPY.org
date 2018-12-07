@@ -1,0 +1,93 @@
+#+TEMPLATE_VERSION: 1.12
+#+OPTIONS: f:t
+
+# PLATFORM INFO TEMPLATES
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on 3DS
+#+END_SRC
+#+BEGIN_COMMENT # did I mention that org-ruby is broken
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on Wii U
+#+END_SRC
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on Pasocom Mini
+#+END_SRC
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on *Starter
+#+END_SRC
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on Switch
+#+END_SRC
+#+END_COMMENT
+
+# modify these to display the category name and link to the previous and next pages.
+# REMEMBER TO COPY IT TO THE FOOTER AS WELL
+[[/][Top]] | [[./][Up (Array)]] | [[PREVIOUS.org][< Previous (PAGE NAME)]] | [[NEXT.org][Next (PAGE NAME) >]]
+
+* COPY
+Copies data between arrays or strings.
+
+** Syntax
+# use haskell as language for syntax examples as a gross workaround for github being the worst
+#+BEGIN_SRC haskell
+COPY dest_array[] [, dest_start%], source_array[] [[, source_start%], source_length%]
+COPY dest_array[] [, dest_start%], source_label$ [, source_length%]
+#+END_SRC
+
+# if alternate syntax is needed, list it in the same way. Use OUT for one-return forms
+
+# describe the arguments here, if necessary.  at minimum, describe types
+| Parameter | Description |
+|-----------+-------------|
+| dest_array[] | The array/string to copy *to* |
+| dest_start% | The starting position in dest_array |
+| source_array[] | The array/string to copy *from* |
+| source_label$ | The DATA label to copy from |
+| source_start% | The position in source_array to start copying from |
+| source_length% | The number of items to copy |
+
+=dest_array= will be extended if there isn't enough room for the data.
+
+** Examples
+Copying between arrays:
+#+BEGIN_SRC smilebasic
+DIM A[10]
+DIM B[0]
+COPY B,A 'copy data from A to B
+?LEN(B) '10
+#+END_SRC
+Reading DATA into an array:
+#+BEGIN_SRC smilebasic
+DIM A[3]
+COPY A,@TEST
+@TEST
+DATA 10,20,30
+#+END_SRC
+
+# ! IF VERSION DIFFERENCES EXIST !
+# use the headings below.  Include bugs.
+** Version Information
+# include this table even if there is only one entry
++ [[#320][3.2.0]]
++ [[#352][3.5.2]]
+*** 3.2.0
+Fixed crash when COPY was called without any arguments [fn:1]
+
+*** 3.5.2
+COPY now allows the source length to be 0 [fn:2] [fn:3]
+
+** References
+[fn:1] SmileBoom "Fixes in Ver. 3.2.0 (June 17, 2015)" http://smilebasic.com/debug/archive/
+
+[fn:2] SmileBoon "Bug Fixes in Ver. 3.5.2 (June 24, 2017)" http://smilebasic.com/en/debug/archive/
+
+[fn:3] SquareFingers "Empty COPY source array gives error." https://smilebasicsource.com/forum?ftid=1263
+
+# If the page is longer than one screen height or so, add a navigation bar at the bottom of the page as well
+# (if the page is short you may omit this)
+-----
+[[/][Top]] | [[./][Up (Array)]] | [[PREVIOUS.org][< Previous (PAGE NAME)]] | [[NEXT.org][Next (PAGE NAME) >]]
