@@ -63,9 +63,12 @@ The following articles contain highly recommended pre-reading material regarding
 	- RIGHT$
 	- SUBST$
 	- INSTR
+	- [[/Array/COPY.org][COPY]]
 + [[/Array/][Array]]
 	- [[/DLC/SoundPROCESSING/ARYOP.org][ARYOP]]
 	- [[/Array/LEN.org][LEN]]
+	- [[/Array/COPY.org][COPY]]
+	- [[/Array/FILL.org][FILL]]
 + [[/Graphics/][Graphics]]
 	- [[/Graphics/RGB.org][RGB]]
 	- [[/Graphics/RGBREAD.org][RGBREAD]]
