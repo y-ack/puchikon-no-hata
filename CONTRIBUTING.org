@@ -18,3 +18,4 @@ For help setting up git on command line (e.g. for editing orgmode files in emacs
 ** Org-mode Guidelines
  - Use tabs for indentation
  - there's not much you can screw up here
+ - if anything breaks just insert zero width spaces until it works
