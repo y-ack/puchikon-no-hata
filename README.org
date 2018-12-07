@@ -1,4 +1,5 @@
 * SmileBASIC Wiki temporary location
+Jump: [[#ImportantReading][Important Reading]] | [[#TableofContents][Table of Contents]] | [[#Lists][Lists]] | [[#Contributing][Contributing]]
 
 ** Important Reading
 The following articles contain highly recommended pre-reading material regarding SmileBASIC fundamentals and internals that aid understanding of the rest of the documentation.
