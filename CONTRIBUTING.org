@@ -12,7 +12,7 @@ For help setting up git on command line (e.g. for editing orgmode files in emacs
 
 ** SmileBASIC Code guidelines
  - Use 2 spaces for indentation
- - Use capitalized identifiers
+ - Use uppercase identifiers
  - Avoid type suffixes where unnecessary
 
 ** Org-mode Guidelines
