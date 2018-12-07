@@ -1,0 +1,39 @@
+#+TEMPLATE_VERSION: 1.12
+#+OPTIONS: f:t
+
+# PLATFORM INFO TEMPLATES
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on 3DS
+#+END_SRC
+#+END_COMMENT
+
+# modify these to display the category name and link to the previous and next pages.
+# REMEMBER TO COPY IT TO THE FOOTER AS WELL
+[[/][Top]] | [[./][Up (CATEGORY)]] | [[PREVIOUS.org][< Previous (PAGE NAME)]] | [[NEXT.org][Next (PAGE NAME) >]]
+
+* <Category Topic>
+Describe briefly the topic
+
+# A table of contents goes here
+ - [[ASC.org][ASC]]
+ - [[CHR$.org][CHR$]]
+ - [[VAL.org][VAL]]
+ - [[HEX$][HEX$]]
+ - [[FORMAT$][FORMAT$]]
+ - [[LEN][LEN]]
+ - [[MID$][MID$]]
+ - [[LEFT$][LEFT$]]
+ - [[RIGHT$][RIGHT$]]
+ - [[INSTR][INSTR]]
+ - [[SUBST$][SUBST$]]
+
+Provide more detail about intricacies of the feature/topic (but do not restate information covered by instruction pages)
+Include results of operators, edge cases, likely examples of use
+Showing small algorithms and programs is fine too
+
+# if any \\
+** References
+
+-----
+[[/][Top]] | [[./][Up (CATEGORY)]] | [[PREVIOUS.org][< Previous (PAGE NAME)]] | [[NEXT.org][Next (PAGE NAME) >]]
