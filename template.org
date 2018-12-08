@@ -1,4 +1,4 @@
-#+TEMPLATE_VERSION: 1.12
+#+TEMPLATE_VERSION: 1.14
 #+OPTIONS: f:t
 
 # PLATFORM INFO TEMPLATES
@@ -40,11 +40,16 @@ FOO arg0% [, arg1$ [, arg2#]?] OUT color%
 # if alternate syntax is needed, list it in the same way. Use OUT for one-return forms
 
 # describe the arguments here, if necessary.  at minimum, describe types
-| parameter | description |
+| Parameter | Description |
 |-----------+-------------|
 | arg0%     | turn on/off |
-| arg1$      | the giant bag of laundry to foo |
+| arg1$     | the giant bag of laundry to foo |
 | arg2#     | omi wa is not my lover |
+
+# if the output is nontrivial or has interesting properties:
+| Output    | Description       |
+|-----------+-------------------|
+| color%    | blood coagulation |
 
 ** Examples
 #+BEGIN_SRC smilebasic
@@ -52,6 +57,12 @@ ACLS
 A$ = "ayaya"
 FOO A$
 #+END_SRC
+
+** Possible Errors
+# Detail errors one might get from the instruction, with a focus on making the resolution clear
+| Error | Cause |
+|-------+-------|
+| Illegal Function Call | arg0% is unspecified, or arg2# is negative |
 
 # ! IF VERSION DIFFERENCES EXIST !
 # use the headings below.  Include bugs.
