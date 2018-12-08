@@ -144,17 +144,24 @@ These are constants that state the type of operation to be done with [[/DLC/Soun
 *Requires Sound Processing DLC*
 
 These are constants that state the type of filtering to be done with [[/DLC/SoundProcessing/BQPARAM.org][BQPARAM]].
+| Constant Name | Filtering Type    | Value |
+|---------------+-------------------+-------|
+| #BQAPF        | All pass filter   |     0 |
+| #BQLPF        | Low pass filter   |     1 |
+| #BQHPF        | High pass filter  |     2 |
+| #BQBPF        | Bandpass filter   |     3 |
+| #BQBSF        | Band stop filter  |     4 |
+| #BQLSF        | Low shelf filter  |     5 |
+| #BQHSF        | High shelf filter |     6 |
+| #BQPEQ        | Peaking equalizer |     7 |
+** PCMVOL Channel Control
+*Requires Sound Processing DLC*
 
-/This was made with a lack of knowledge of BQPARAM, please update./
-| Constant Name | Filtering Type | Value |
-|---------------+----------------+-------|
-| #BQAPF        |                |     0 |
-| #BQLPF        |                |     1 |
-| #BQHPF        |                |     2 |
-| #BQBPF        |                |     3 |
-| #BQBSF        |                |     4 |
-| #BQLSF        |                |     5 |
-| #BQHSF        |                |     6 |
-| #BQPEQ        |                |     7 |
+These are constants to select the channel to control with [[/DLC/SoundProcessing/PCMVOL.org][PCMVOL]].
+
+| Constant Name | Channel | Value |
+|---------------+---------+-------|
+| #PVLEFT       | Left    |     0 |
+| #PVRIGHT      | Right   |     1 |
 -----
 [[/][Top]] | [[Error.org][< Previous (Errors)]] | [[NEXT.org][Next (PAGE NAME) >]]
