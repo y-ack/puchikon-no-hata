@@ -1,0 +1,56 @@
+#+TEMPLATE_VERSION: 1.12
+#+OPTIONS: f:t
+
+# PLATFORM INFO TEMPLATES
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on 3DS
+#+END_SRC
+#+END_COMMENT
+
+# modify these to display the category name and link to the previous and next pages.
+# REMEMBER TO COPY IT TO THE FOOTER AS WELL
+[[/][Top]] | [[./][Up (Main)]] | [[PREVIOUS.org][< Previous (TODO!!!)]] | [[NEXT.org][Next (TODO!!!) >]]
+
+* Sprite
+Describe briefly the topic
+
+** General Commands
+These commands apply to all sprites.
+
+ - [[SPPAGE.org][SPPAGE]]
+ - [[SPCLIP.org][SPCLIP]]
+ - [[SPDEF.org][SPDEF]]
+ - [[SPCLR.org][SPCLR]][fn:0:Also applies to single sprites.]
+ 
+** Single Sprite Commands
+These commands apply to specific sprites.
+
+ - [[SPUSED.org][SPUSED]]
+ - [[SPSET.org][SPSET]]
+ - [[SPSHOW.org][SPSHOW]]
+ - [[SPHIDE.org][SPHIDE]]
+ - [[SPHOME.org][SPHOME]]
+ - [[SPOFS.org][SPOFS]]
+ - [[SPROT.org][SPROT]]
+ - [[SPSCALE.org][SPSCALE]]
+ - [[SPCOLOR.org][SPCOLOR]]
+ - [[SPCHR.org][SPCHR]]
+ - [[SPLINK.org][SPLINK]]
+ - [[SPUNLINK.org][SPUNLINK]]
+ - [[SPANIM.org][SPANIM]]
+ - [[SPSTART.org][SPSTART]]
+ - [[SPSTOP.org][SPSTOP]]
+ - [[SPCHK.org][SPCHK]]
+ - [[SPVAR.org][SPVAR]]
+ - [[SPCOL.org][SPCOL]]
+ - [[SPCOLVEC.org][SPCOLVEC]]
+ - [[SPHITSP.org][SPHITSP]]
+ - [[SPHITRC.org][SPHITRC]]
+ - [[SPHITINFO.org][SPHITINFO]]
+ - [[SPFUNC.org][SPFUNC]]
+
+** References
+
+-----
+[[/][Top]] | [[./][Up (Main)]] | [[PREVIOUS.org][< Previous (TODO!!!)]] | [[NEXT.org][Next (TODO!!!) >]]
