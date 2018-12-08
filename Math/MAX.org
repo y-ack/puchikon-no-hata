@@ -46,7 +46,9 @@ MAX array[] OUT maxim​um
 | number_1, number_2, ... | List of numbers to find the maximum of. Must have at least 2 numbers |
 | array[] | Number array to find the maximum of. Length must not be 0 |
 
-=MAX= will always return a float, unless you pass an integer array or 2 integers.
+| Output | Description |
+|-----------+-------------|
+| maximum | The maximum of the list/array. Will always be a float, unless you passed an integer array or 2 integers. If the maximum value occurs multiple times in the list, =MAX= returns the first occurrence.|
 
 ** Examples
 #+BEGIN_SRC smilebasic
@@ -57,6 +59,12 @@ A[1]=4
 A[2]=8
 PRINT MAX(A) '8
 #+END_SRC
+
+** Possible Errors
+| Error | Cause |
+|-------+-|
+| Type mismatch | The list of numbers has fewer than 2 items, or a value which isn't a number, or a string array was used. |
+| Illegal function call | 0 arguments were passed, or the number of outputs was not 1, or an array with a length of 0 was used. |
 
 # ! IF VERSION DIFFERENCES EXIST !
 # use the headings below.  Include bugs.
