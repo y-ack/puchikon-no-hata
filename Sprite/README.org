@@ -51,6 +51,7 @@ These commands apply to specific sprites.
  - [[SPFUNC.org][SPFUNC]]
 
 ** References
+[fn:0]
 
 -----
 [[/][Top]] | [[./][Up (Main)]] | [[PREVIOUS.org][< Previous (TODO!!!)]] | [[NEXT.org][Next (TODO!!!) >]]
