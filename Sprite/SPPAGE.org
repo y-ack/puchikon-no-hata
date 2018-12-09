@@ -26,7 +26,7 @@
 
 # modify these to display the category name and link to the previous and next pages.
 # REMEMBER TO COPY IT TO THE FOOTER AS WELL
-[[/][Top]] | [[./][Up (Main)]] | [[PLEASE_REPLACE_PREVIOUS.org][< Previous]] | [[PLEASE_REPLACE_NEXT.org][Next >]]
+[[/][Top]] | [[./][Up (Sprite)]] | [[SPFUNC.org][< Previous (SPFUNC)]] | [[SPCLIP.org][Next (SPCLIP) >]]
 
 * SPPAGE
 Gets and sets the graphic page that will be used when displaying sprites.
@@ -38,7 +38,7 @@ SPPAGE OUT page%
 #+END_SRC
 
 # describe the arguments
-| parameter | description                                        |
+| Parameter | Description                                        |
 |-----------+----------------------------------------------------|
 | page%     | The current graphic page used as the sprite sheet. |
 
@@ -47,7 +47,7 @@ SPPAGE page%
 #+END_SRC
 
 # describe the arguments
-| parameter | description                                              |
+| Parameter | Description                                              |
 |-----------+----------------------------------------------------------|
 | page%     | The current graphic page to be used as the sprite sheet. |
 
@@ -72,9 +72,9 @@ GLINE 16,0,31,15,#WHITE 'Draw a new sprite.
 Function: exists
 
 ** References
-[fn:1] http://smilebasic.com/debug/archive/
+# [fn:1] http://smilebasic.com/debug/archive/
 
 # If the page is longer than one screen height or so, add a navigation bar at the bottom of the page as well
 # (if the page is short you may omit this)
 -----
-[[/][Top]] | [[./][Up (Main)]] | [[PLEASE_REPLACE_PREVIOUS.org][< Previous (TODO!!!)]] | [[PLEASE_REPLACE_NEXT.org][Next (TODO!!!) >]]
+[[/][Top]] | [[./][Up (Sprite)]] | [[SPFUNC.org][< Previous (SPFUNC)]] | [[SPCLIP.org][Next (SPCLIP) >]]
