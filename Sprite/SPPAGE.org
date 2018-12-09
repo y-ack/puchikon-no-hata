@@ -1,0 +1,80 @@
+#+TEMPLATE_VERSION: 1.12
+#+OPTIONS: f:t
+
+# PLATFORM INFO TEMPLATES
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on 3DS
+#+END_SRC
+#+BEGIN_COMMENT # did I mention that org-ruby is broken
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on Wii U
+#+END_SRC
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on Pasocom Mini
+#+END_SRC
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on *Starter
+#+END_SRC
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on Switch
+#+END_SRC
+#+END_COMMENT
+
+# modify these to display the category name and link to the previous and next pages.
+# REMEMBER TO COPY IT TO THE FOOTER AS WELL
+[[/][Top]] | [[./][Up (Main)]] | [[PLEASE_REPLACE_PREVIOUS.org][< Previous]] | [[PLEASE_REPLACE_NEXT.org][Next >]]
+
+* SPPAGE
+Gets and sets the graphic page that will be used when displaying sprites.
+
+** Syntax
+# no idea how this works, if anything's broken, I'm sorry
+#+BEGIN_SRC haskell
+SPPAGE OUT page%
+#+END_SRC
+
+# describe the arguments
+| parameter | description                                        |
+|-----------+----------------------------------------------------|
+| page%     | The current graphic page used as the sprite sheet. |
+
+#+BEGIN_SRC haskell
+SPPAGE page%
+#+END_SRC
+
+# describe the arguments
+| parameter | description                                              |
+|-----------+----------------------------------------------------------|
+| page%     | The current graphic page to be used as the sprite sheet. |
+
+** Examples
+#+BEGIN_SRC smilebasic
+ACLS
+
+SPPAGE 5 'This will use the background tile sheet as the sprite sheet.
+SPSET 0,1
+SPOFS 0,200,120
+
+WAIT 60 'Wait a second
+
+SPPAGE 3 'This will use the third graphic page. It's empty by default.
+GPAGE 0,3 'Display page 0, edit page 3.
+GLINE 16,0,31,15,#WHITE 'Draw a new sprite.
+#+END_SRC
+
+** Version Information
+# include this table even if there is only one entry
+*** 3.0.0
+Function: exists
+
+** References
+[fn:1] http://smilebasic.com/debug/archive/
+
+# If the page is longer than one screen height or so, add a navigation bar at the bottom of the page as well
+# (if the page is short you may omit this)
+-----
+[[/][Top]] | [[./][Up (Main)]] | [[PLEASE_REPLACE_PREVIOUS.org][< Previous (TODO!!!)]] | [[PLEASE_REPLACE_NEXT.org][Next (TODO!!!) >]]
