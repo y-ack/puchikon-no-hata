@@ -1,7 +1,10 @@
+#+TEMPLATE_VERSION: 1.14
+#+OPTIONS: f:t
+
 [[/][Top]] | [[./][Up (Math)]] | [[PI.org][< Previous (PI)]] | [[DEG.org][Next (DEG) >]]
 
 * RAD
-DEG finds degree values from radians values. [[/Math/DEG.org][DEG]] can be used to do the opposite operation.
+DEG finds degree values from radians values.
 
 ** Syntax
 #+BEGIN_SRC haskell
@@ -17,11 +20,17 @@ DEG arg0# OUT X#
 VAR X# = RAD(45) ' (45 * (PI / 180)) = 0.78539816
 VAR Y# = DEG(X#) ' (0.78529816 / (PI / 180)) = 45
 #+END_SRC
-
+** Possible Errors
+| Error                 | Cause                      |
+|-----------------------+----------------------------|
+| Illegal function call | arg0# is unspecified       |
+| Type mismatch         | arg0# is a string or array |
 ** Version Information
 *** 3.0.0
 Function: exists.
 
+** See Also
+ - [[DEG.org][DEG]]
 ** References
 -----
 [[/][Top]] | [[./][Up (Math)]] | [[PI.org][< Previous (PI)]] | [[DEG.org][Next (DEG) >]]
