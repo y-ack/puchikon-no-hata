@@ -68,7 +68,7 @@ GLINE 16,0,31,15,#WHITE 'Draw a new sprite.
 
 ** Version Information
 # include this table even if there is only one entry
-+ [[#310][3.2.0]]
++ [[#320][3.2.0]]
 *** 3.2.0
 OUT variant added. [fn:1]
 
