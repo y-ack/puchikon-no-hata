@@ -6,25 +6,28 @@
 * RAD
 DEG finds degree values from radians values.
 
+[[https://en.wikipedia.org/wiki/Radian#Conversion_between_radians_and_degrees][More information on converting degrees from radians can be found here.]]
 ** Syntax
 #+BEGIN_SRC haskell
-X# = DEG(arg0#)
-DEG arg0# OUT X#
+RAD degrees# OUT radians#
 #+END_SRC
 | parameter | description      |
 |-----------+------------------|
-| arg0#     | Value in degrees |
+| degrees#  | Value in degrees |
 
+| output   | description      |
+|----------+------------------|
+| radians# | Value in radians |
 ** Examples
 #+BEGIN_SRC smilebasic
 VAR X# = RAD(45) ' (45 * (PI / 180)) = 0.78539816
 VAR Y# = DEG(X#) ' (0.78529816 / (PI / 180)) = 45
 #+END_SRC
 ** Possible Errors
-| Error                 | Cause                      |
-|-----------------------+----------------------------|
-| Illegal function call | arg0# is unspecified       |
-| Type mismatch         | arg0# is a string or array |
+| Error                 | Cause                         |
+|-----------------------+-------------------------------|
+| Illegal function call | degrees# is unspecified       |
+| Type mismatch         | degrees# is a string or array |
 ** Version Information
 *** 3.0.0
 Function: exists.
