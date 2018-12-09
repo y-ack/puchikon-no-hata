@@ -9,7 +9,7 @@
 #+END_COMMENT
 
 # NICE HEADER THINGS
-[[/][Top]] | [[./][Up (Main)]] | [[PREVIOUS.org][< Previous (TODO!!!)]] | [[NEXT.org][Next (TODO!!!) >]]
+[[/][Top]] | [[./][Up (Main)]] | [[PLEASE_REPLACE_PREVIOUS.org][< Previous]] | [[PLEASE_REPLACE_NEXT.org][Next >]]
 
 * Sprite
 Sprites are graphics in SmileBASIC that can move, rotate, scale, animate, and do many other things. Sprites pull their graphics from the sprite page. By default, the sprite page is the fourth graphic page, but you can change it with the [[SPPAGE.org][SPPAGE]] command.
@@ -50,4 +50,4 @@ These commands apply to specific sprites. They require a sprite ID as their firs
  - [[SPFUNC.org][SPFUNC]]
 
 -----
-[[/][Top]] | [[./][Up (Main)]] | [[PREVIOUS.org][< Previous (TODO!!!)]] | [[NEXT.org][Next (TODO!!!) >]]
+[[/][Top]] | [[./][Up (Main)]] | [[PLEASE_REPLACE_PREVIOUS.org][< Previous]] | [[PLEASE_REPLACE_NEXT.org][Next >]]
