@@ -24,11 +24,11 @@
 #+END_SRC
 #+END_COMMENT
 
+* SPPAGE
 # modify these to display the category name and link to the previous and next pages.
 # REMEMBER TO COPY IT TO THE FOOTER AS WELL
 [[/][Top]] | [[./][Up (Sprite)]] | [[SPFUNC.org][< Previous (SPFUNC)]] | [[SPCLIP.org][Next (SPCLIP) >]]
 
-* SPPAGE
 Gets and sets the graphic page that will be used when displaying sprites.
 
 #+BEGIN_SRC haskell
