@@ -31,11 +31,11 @@
 
 Gets and sets the graphic page that will be used when displaying sprites.
 
+** Syntax
 #+BEGIN_SRC haskell
 SPPAGE page%
 #+END_SRC
 
-** Syntax
 # describe the arguments
 | Parameter | Description                                              |
 |-----------+----------------------------------------------------------|
