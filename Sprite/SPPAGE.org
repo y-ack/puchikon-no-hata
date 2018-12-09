@@ -31,6 +31,15 @@
 * SPPAGE
 Gets and sets the graphic page that will be used when displaying sprites.
 
+#+BEGIN_SRC haskell
+SPPAGE page%
+#+END_SRC
+
+# describe the arguments
+| Parameter | Description                                              |
+|-----------+----------------------------------------------------------|
+| page%     | The graphic page to be used as the sprite sheet. |
+
 ** Syntax
 # no idea how this works, if anything's broken, I'm sorry
 #+BEGIN_SRC haskell
@@ -41,15 +50,6 @@ SPPAGE OUT page%
 | Parameter | Description                                        |
 |-----------+----------------------------------------------------|
 | page%     | The current graphic page used as the sprite sheet. |
-
-#+BEGIN_SRC haskell
-SPPAGE page%
-#+END_SRC
-
-# describe the arguments
-| Parameter | Description                                              |
-|-----------+----------------------------------------------------------|
-| page%     | The current graphic page to be used as the sprite sheet. |
 
 ** Examples
 #+BEGIN_SRC smilebasic
