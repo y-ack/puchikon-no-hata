@@ -8,12 +8,11 @@
 #+END_SRC
 #+END_COMMENT
 
-# modify these to display the category name and link to the previous and next pages.
-# REMEMBER TO COPY IT TO THE FOOTER AS WELL
+# NICE HEADER THINGS
 [[/][Top]] | [[./][Up (Main)]] | [[PREVIOUS.org][< Previous (TODO!!!)]] | [[NEXT.org][Next (TODO!!!) >]]
 
 * Sprite
-Describe briefly the topic
+Sprites are graphics in SmileBASIC that can move, rotate, scale, animate, and do many other things. Sprites pull their graphics from the sprite page. By default, the sprite page is the fourth graphic page, but you can change it with the [[SPPAGE.org][SPPAGE]] command.
 
 ** General Commands
 These commands apply to all sprites.
@@ -21,10 +20,10 @@ These commands apply to all sprites.
  - [[SPPAGE.org][SPPAGE]]
  - [[SPCLIP.org][SPCLIP]]
  - [[SPDEF.org][SPDEF]]
- - [[SPCLR.org][SPCLR]][fn:0:Also applies to single sprites.]
+ - [[SPCLR.org][SPCLR]]
  
 ** Single Sprite Commands
-These commands apply to specific sprites.
+These commands apply to specific sprites. They require a sprite ID as their first parameter.
 
  - [[SPUSED.org][SPUSED]]
  - [[SPSET.org][SPSET]]
@@ -49,9 +48,6 @@ These commands apply to specific sprites.
  - [[SPHITRC.org][SPHITRC]]
  - [[SPHITINFO.org][SPHITINFO]]
  - [[SPFUNC.org][SPFUNC]]
-
-** References
-[fn:0]
 
 -----
 [[/][Top]] | [[./][Up (Main)]] | [[PREVIOUS.org][< Previous (TODO!!!)]] | [[NEXT.org][Next (TODO!!!) >]]
