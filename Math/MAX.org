@@ -71,11 +71,16 @@ PRINT MAX(A) '8
 ** Version Information
 # include this table even if there is only one entry
 + [[#332][3.3.2]]
++ [[#360][3.6.0]]
 *** 3.3.2
 No longer allows arrays with 0 elements [fn:1]
 
+*** 3.6.0
+Now treats NaN properly (MAX returns NaN if any of the inputs are NaN) [fn:2]
+
 ** References
-[fn:1] SmileBoom "Bug Fixes in Ver. 3.3.2 (August 10, 2016)" http://smilebasic.com/en/debug/archive/
+[fn:1] SmileBoom "Bug Fixes in Ver. 3.3.2 (August 10, 2016)" http://smilebasic.com/en/debug/archive/\\
+[fn:2] SmileBoom "Bug Fixes in Ver. 3.6.0 (June 29, 2018)" http://smilebasic.com/en/debug/
 
 # If the page is longer than one screen height or so, add a navigation bar at the bottom of the page as well
 # (if the page is short you may omit this)
