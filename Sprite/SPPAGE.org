@@ -35,12 +35,12 @@ Gets and sets the graphic page that will be used when displaying sprites.
 SPPAGE page%
 #+END_SRC
 
+** Syntax
 # describe the arguments
 | Parameter | Description                                              |
 |-----------+----------------------------------------------------------|
 | page%     | The graphic page to be used as the sprite sheet. |
 
-** Syntax
 # no idea how this works, if anything's broken, I'm sorry
 #+BEGIN_SRC haskell
 SPPAGE OUT page%
