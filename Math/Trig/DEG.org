@@ -1,0 +1,40 @@
+#+TEMPLATE_VERSION: 1.16
+#+OPTIONS: f:t
+
+[[/][Top]]| [[./][Up (Math)]] | [[RAD.org][< Previous (RAD)]] | [[SIN.org][Next (SIN) >]]
+
+* DEG
+DEG finds degree values from radians values.
+
+[[https://en.wikipedia.org/wiki/Radian#Conversion_between_radians_and_degrees][More information on converting degrees from radians can be found here.]]
+** Syntax
+#+BEGIN_SRC haskell
+DEG radians# OUT degrees#
+#+END_SRC
+| parameter | description       |
+|-----------+-------------------|
+| radians#  | Value in radians  |
+
+| output   | description      |
+|----------+------------------|
+| degrees# | Value in degrees |
+** Examples
+#+BEGIN_SRC smilebasic
+VAR X# = DEG(0.78629816) ' (0.78529816 / (PI / 180)) = 45
+VAR Y# = RAD(X#)         ' (45 * (PI / 180)) = 0.78539816
+#+END_SRC
+
+** Possible Errors
+| Error                 | Cause                         |
+|-----------------------+-------------------------------|
+| Illegal function call | radians# is unspecified       |
+| Type mismatch         | radians# is a string or array |
+** Version Information
+*** 3.0.0
+Function: exists.
+
+** See Also
+ - [[RAD.org][RAD]]
+** References
+-----
+[[/][Top]] | [[./][Up (Math)]] | [[RAD.org][< Previous (RAD)]] | [[SIN.org][Next (SIN) >]]

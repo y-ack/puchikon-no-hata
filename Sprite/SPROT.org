@@ -1,0 +1,32 @@
+#+TEMPLATE_VERSION: 1.12
+#+OPTIONS: f:t
+
+[[/][Top]] | [[./][Up (Sprite)]] | [[SPOFS.org][< Previous (SPOFS)]] | [[SPSCALE.org][Next (SPSCALE) >]]
+
+* SPROT
+Rotates a sprite
+
+** Syntax
+#+BEGIN_SRC haskell
+SPROT sprite%, angle%
+SPROT sprite% OUT angle%
+#+END_SRC
+
+| parameter  | description |
+|-----------+----------|
+| sprite% | sprite management number |
+| angle% | the rotation angle, *in degrees* |
+
+** Examples
+#+BEGIN_SRC smilebasic
+SPSET 0,0
+SPOFS 0,100,100
+SPROT 0,45
+#+END_SRC
+
+** Possible errors
+|Error|Cause|
+|-|
+|Illegal function call|sprite doesn't exist, or wrong number of arguments were used|
+|Out of range|a sprite number less than 0 or more than the highest sprite number was used|
+|Type mismatch|A non-number value was used for the sprite id or angle|
