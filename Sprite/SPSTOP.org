@@ -1,0 +1,31 @@
+#+TEMPLATE_VERSION: 1.12
+#+OPTIONS: f:t
+
+[[/][Top]] | [[./][Up (Sprite)]] | [[SPSTART.org][< Previous (SPSTART)]] | [[SPCHK.org][Next (SPCHK) >]]
+
+* SPSTOP
+Pauses sprite animations
+
+** Syntax
+#+BEGIN_SRC haskell
+SPSTOP [ sprite% ]
+#+END_SRC
+
+| Parameter  | Description |
+|-----------+----------|
+| sprite%     | The management number of the sprite to stop animating |
+
+If =sprite%= is omitted, all sprites that currently exist will be affected.
+
+** Examples
+#+BEGIN_SRC smilebasic
+SPSET 0,0
+SPANIM 0,"XY",-10,100,100,0
+
+WAIT 60
+SPSTOP 'sprite 0 stops animating
+
+SPSET 1,1
+SPANIM 1,"XY",-10,100,100,0
+'sprite 1 animates normally
+#+END_SRC
