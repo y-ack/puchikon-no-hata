@@ -1,0 +1,39 @@
+#+TEMPLATE_VERSION: 1.12
+#+OPTIONS: f:t
+
+[[/][Top]] | [[./][Up (Sprite)]] | [[SPDEF.org][< Previous (SPDEF)]] | [[SPUSED.org][Next (SPUSED) >]]
+
+* SPCLR
+Deletes a sprite
+
+** Syntax
+#+BEGIN_SRC haskell
+SPCLR [sprite%]
+#+END_SRC
+
+| Parameter  | Description |
+|-----------+----------|
+| sprite% | management number of the sprite to delete |
+
+If =sprite%= is omitted, all sprites will be cleared.
+
+** Examples
+#+BEGIN_SRC smilebasic
+SPSET 1,4
+SPSET 0,6
+SPSET 3,16
+WAIT 60
+SPCLR 'all sprites disappear
+#+END_SRC
+
+** Version Information
+# include this table even if there is only one entry
++ [[#320][3.2.0]]
+*** 3.2.0
+Fixed a bug where the Z position was preserved after clearing and re-creating a sprite [fn:1]
+
+** References
+[fn:1] SmileBoom, "Fixes in Ver. 3.2.0 (June 17, 2015)" http://smilebasic.com/en/debug/archive/
+
+-----
+[[/][Top]] | [[./][Up (Sprite)]] | [[SPDEF.org][< Previous (SPDEF)]] | [[SPUSED.org][Next (SPUSED) >]]

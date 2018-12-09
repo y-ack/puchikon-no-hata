@@ -24,14 +24,23 @@
 #+END_SRC
 #+END_COMMENT
 
+* SPPAGE
 # modify these to display the category name and link to the previous and next pages.
 # REMEMBER TO COPY IT TO THE FOOTER AS WELL
 [[/][Top]] | [[./][Up (Sprite)]] | [[SPFUNC.org][< Previous (SPFUNC)]] | [[SPCLIP.org][Next (SPCLIP) >]]
 
-* SPPAGE
 Gets and sets the graphic page that will be used when displaying sprites.
 
 ** Syntax
+#+BEGIN_SRC haskell
+SPPAGE page%
+#+END_SRC
+
+# describe the arguments
+| Parameter | Description                                              |
+|-----------+----------------------------------------------------------|
+| page%     | The graphic page to be used as the sprite sheet. |
+
 # no idea how this works, if anything's broken, I'm sorry
 #+BEGIN_SRC haskell
 SPPAGE OUT page%
@@ -41,15 +50,6 @@ SPPAGE OUT page%
 | Parameter | Description                                        |
 |-----------+----------------------------------------------------|
 | page%     | The current graphic page used as the sprite sheet. |
-
-#+BEGIN_SRC haskell
-SPPAGE page%
-#+END_SRC
-
-# describe the arguments
-| Parameter | Description                                              |
-|-----------+----------------------------------------------------------|
-| page%     | The current graphic page to be used as the sprite sheet. |
 
 ** Examples
 #+BEGIN_SRC smilebasic
@@ -68,11 +68,12 @@ GLINE 16,0,31,15,#WHITE 'Draw a new sprite.
 
 ** Version Information
 # include this table even if there is only one entry
-*** 3.0.0
-Function: exists
++ [[#320][3.2.0]]
+*** 3.2.0
+OUT variant added. [fn:1]
 
 ** References
-# [fn:1] http://smilebasic.com/debug/archive/
+[fn:1] SmileBoom, "Additions/Changes in Ver. 3.2.0 (June 17, 2015)" http://smilebasic.com/en/debug/archive/
 
 # If the page is longer than one screen height or so, add a navigation bar at the bottom of the page as well
 # (if the page is short you may omit this)
