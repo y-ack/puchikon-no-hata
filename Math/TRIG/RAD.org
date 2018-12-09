@@ -6,7 +6,7 @@
 * RAD
 DEG finds degree values from radians values.
 
-[[https://en.wikipedia.org/wiki/Radian#Conversion_between_radians_and_degrees][More information on converting degrees from radians can be found here.]]
+[[https://en.wikipedia.org/wiki/Radian#Conversion_between_radians_and_degrees][More information on converting radians from degrees can be found here.]]
 ** Syntax
 #+BEGIN_SRC haskell
 RAD degrees# OUT radians#
