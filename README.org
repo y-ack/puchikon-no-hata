@@ -13,7 +13,9 @@ The following articles contain highly recommended pre-reading material regarding
 ** Table of Contents:
 + [[/Control/][Control Flow]]
 	- [[/Control/WHILE.org][WHILE]]
-	- [[/Control/FUNCTION/][Function]]
+	- [[/Control/Function/][Function]]
+	  - [[/Control/Function/DEF.org][DEF]]
+	  - [[/Control/Function/CALLIDX.org][CALLIDX]]
 + [[/Variable/][Variables]]
 + [[/Math/][Math]]
 	- [[/Math/ABS.org][ABS]]
