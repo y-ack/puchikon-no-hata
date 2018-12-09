@@ -27,9 +27,7 @@
 #+END_SRC
 #+END_COMMENT
 
-# modify these to display the category name and link to the previous and next pages.
-# REMEMBER TO COPY IT TO THE FOOTER AS WELL
-[[/][Top]] | [[./][Up (CATEGORY)]] | [[PREVIOUS.org][< Previous (PAGE NAME)]] | [[NEXT.org][Next (PAGE NAME) >]]
+[[/][Top]] | [[./][Up (Main)]] | [[/Array/][< Previous (Array)]] | [[/Sprite/][Next (Sprite) >]]
 
 * GPAGE
 This command allows you to switch which graphic page will be drawn to and shown.
@@ -121,12 +119,13 @@ Fixed a bug where using GPAGE after setting a GCLIP area would reset the GCLIP a
 OUT variant added. [fn:1]
 
 ** See Also
- - [[BAR.org][BAR]]
- - [[/String/BAZ.org][BAZ]]
+ - [[GCOPY.org][GCOPY]]
+ - [[/Sprite/SPPAGE.org][SPPAGE]]
+ - [[/BG/BGPAGE.org][BGPAGE]]
 
 ** References
 [fn:1] SmileBoom, "Additions/Changes in Ver. 3.2.0 (June 17, 2015)" http://smilebasic.com/debug/archive/
 
 # If the page is longer than one screen height or so, add a navigation bar at the bottom of the page as well
 -----
-[[/][Top]] | [[./][Up (CATEGORY)]] | [[PREVIOUS.org][< Previous (PAGE NAME)]] | [[NEXT.org][Next (PAGE NAME) >]]
+[[/][Top]] | [[./][Up (Main)]] | [[/Array/][< Previous (Array)]] | [[/Sprite/][Next (Sprite) >]]
