@@ -1,0 +1,36 @@
+#+TEMPLATE_VERSION: 1.12
+#+OPTIONS: f:t
+
+[[/][Top]] | [[./][Up (Sprite)]] | [[SPROT.org][< Previous (SPROT)]] | [[SPCOLOR.org][Next (SPCOLOR) >]]
+
+* SPSCALE
+Changes the size of a sprite
+
+** Syntax
+#+BEGIN_SRC haskell
+SPSCALE sprite%,x_scale#,y_scale#
+#+END_SRC
+
+| parameter  | description |
+|-----------+----------|
+| sprite% | sprite managment number |
+| x_scale# | x scale multiplier. 1 is normal size, 0.5 is half size, etc. Must not be negative |
+| y_scale# | y scale multiplier. |
+
+Scaling is done before rotation.\\
+It is possible to scale a sprite by a negative amount, but only using SPANIM.
+
+** Examples
+#+BEGIN_SRC smilebasic
+SPSET 0,0
+SPSCALE 0,20,10 'sprite is now 20x as wide and 10x as high
+#+END_SRC
+
+** Possible Errors
+|Error|Cause|
+|-|
+|Out of range|A negative number or NaN was used for the scale, Or the sprite number was less than 0 or greater than the maximum|
+|Illegal function call|Sprite doesn't exist, or wrong number of arguments|
+
+-----
+[[/][Top]] | [[./][Up (Sprite)]] | [[SPROT.org][< Previous (SPROT)]] | [[SPCOLOR.org][Next (SPCOLOR) >]]
