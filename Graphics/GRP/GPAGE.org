@@ -1,0 +1,131 @@
+# (KEEP THIS)
+#+TEMPLATE_VERSION: 1.16
+#+OPTIONS: f:t
+
+# PLATFORM INFO TEMPLATES
+# (you can remove this)
+# Not removing because someone else with more knowledge of the other versions can talk about Wii U GRPs and whatever Pi Starter is doing
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on 3DS
+#+END_SRC
+#+BEGIN_COMMENT # did I mention that org-ruby is broken
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on Wii U
+#+END_SRC
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on Pasocom Mini
+#+END_SRC
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on *Starter
+#+END_SRC
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on Switch
+#+END_SRC
+#+END_COMMENT
+
+[[/][Top]] | [[./][Up (Main)]] | [[/Array/][< Previous (Array)]] | [[/Sprite/][Next (Sprite) >]]
+
+* GPAGE
+This command allows you to switch which graphic page will be drawn to and shown.
+Graphic pages are 6 512x512 images you can edit. They can be used as sprite sheets and background tile sheets with the SPPAGE and BGPAGE commands respectively.
+There is a negative graphic page that contains the font, but it can only be used with GCOPY.
+
+** Syntax
+#+BEGIN_SRC haskell
+GPAGE display%, draw%
+#+END_SRC
+
+# if alternate syntax is needed, list it in the same way. Use OUT for one-return forms
+#+BEGIN_SRC haskell
+GPAGE OUT display%, draw%
+#+END_SRC
+
+# describe the arguments here, if necessary.  at minimum, describe types
+| Parameter/Output | Description                                    |
+|------------------+------------------------------------------------|
+| display%         | The graphic page to display.                   |
+| draw%            | The graphic page to use with drawing commands. |
+
+** Examples
+This example displays each of the graphic pages (excluding the font page) for 1 second. After that, it edits one page while displaying another.
+#+BEGIN_SRC smilebasic
+ACLS
+
+FOR I=0 TO 5
+ 'Run through each of the 6 graphic pages, showing their default graphics.
+ GPAGE I,I
+ ?"Showing graphic page ";I;"."
+ WAIT 60 'Wait a second.
+NEXT I
+
+'Edit one page while showing another page
+GPAGE 4,5
+?"Showing graphic page 4 and editing graphic page 5."
+GBOX 0,0,31,31,&hFF1F3F7F 'Pretty color
+WAIT 60
+
+GPAGE 5,4
+?"Showing graphic page 5 and editing graphic page 4."
+GBOX 32,32,63,63,&hFF7F1F3F 'Also just as pretty color
+WAIT 60
+
+?"Showing graphic page 5."
+GPAGE 5,5
+#+END_SRC
+
+Drawing to one page and displaying another can create a "double-buffered" effect, where if one frame takes too long to draw, the gamer will see a complete picture instead of the currently drawing one.
+#+BEGIN_SRC smilebasic
+ACLS
+
+'This variable will hold our buffer page.
+VAR BUFFPAGE=0
+
+WHILE 1
+ 'Set current page to either 0 or 1.
+ GPAGE BUFFPAGE,!BUFFPAGE
+ 
+ 'Clears page we're going to write to.
+ GCLS
+ 
+ 'Swaps buffer. 0 becomes 1, 1 becomes 0.
+ BUFFPAGE=!BUFFPAGE
+ 
+ FOR I=0 TO 15
+  'Draw some random boxes
+  GBOX RND(400),RND(240),RND(400),RND(240)
+  VSYNC 1 'Fake lag.
+ VSYNC
+WEND
+#+END_SRC
+
+** Possible Errors
+# Detail errors one might get from the instruction, with a focus on making the resolution clear
+| Error | Cause |
+|-------+-------|
+| Out of Range | Either display% or draw% is less than 0 or greater than 5. If you're trying to display the font page, you'll need to GCOPY it to an accessible page. |
+
+# ! IF VERSION DIFFERENCES EXIST !
+# use the headings below.  Include bugs.
+** Version Information
++ [[#320][3.2.0]]
+*** 3.1.0
+Fixed a bug where using GPAGE after setting a GCLIP area would reset the GCLIP area. [fn:1]
+
+*** 3.2.0
+OUT variant added. [fn:1]
+
+** See Also
+ - [[GCOPY.org][GCOPY]]
+ - [[/Sprite/SPPAGE.org][SPPAGE]]
+ - [[/BG/BGPAGE.org][BGPAGE]]
+
+** References
+[fn:1] SmileBoom, "Additions/Changes in Ver. 3.2.0 (June 17, 2015)" http://smilebasic.com/debug/archive/
+
+# If the page is longer than one screen height or so, add a navigation bar at the bottom of the page as well
+-----
+[[/][Top]] | [[./][Up (Main)]] | [[/Array/][< Previous (Array)]] | [[/Sprite/][Next (Sprite) >]]

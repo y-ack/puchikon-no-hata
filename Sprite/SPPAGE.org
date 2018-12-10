@@ -37,19 +37,19 @@ SPPAGE page%
 #+END_SRC
 
 # describe the arguments
-| Parameter | Description                                              |
-|-----------+----------------------------------------------------------|
-| page%     | The graphic page to be used as the sprite sheet. |
+| Parameter | Description                                                                    |
+|-----------+--------------------------------------------------------------------------------|
+| page%     | The graphic page to be used as the sprite sheet. Must be a number from 0 to 5. |
 
 # no idea how this works, if anything's broken, I'm sorry
 #+BEGIN_SRC haskell
 SPPAGE OUT page%
 #+END_SRC
 
-# describe the arguments
-| Parameter | Description                                        |
-|-----------+----------------------------------------------------|
-| page%     | The current graphic page used as the sprite sheet. |
+# describe the outputs
+| Output | Description                                                                           |
+|--------+---------------------------------------------------------------------------------------|
+| page%  | The current graphic page used as the sprite sheet. This will be a number from 0 to 5. |
 
 ** Examples
 #+BEGIN_SRC smilebasic
@@ -63,7 +63,7 @@ WAIT 60 'Wait a second
 
 SPPAGE 3 'This will use the third graphic page. It's empty by default.
 GPAGE 0,3 'Display page 0, edit page 3.
-GLINE 16,0,31,15,#WHITE 'Draw a new sprite.
+GLINE 16,0,31,15,#WHITE 'Draw a line onto the graphic page, also changing the appearance of the sprite defined before.
 #+END_SRC
 
 ** Version Information
