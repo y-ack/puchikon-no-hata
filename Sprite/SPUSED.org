@@ -1,0 +1,83 @@
+# (KEEP THIS)
+#+TEMPLATE_VERSION: 1.16
+#+OPTIONS: f:t
+
+
+# PLATFORM INFO TEMPLATES
+# (you can remove this)
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on 3DS
+#+END_SRC
+#+BEGIN_COMMENT # did I mention that org-ruby is broken
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on Wii U
+#+END_SRC
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on Pasocom Mini
+#+END_SRC
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on *Starter
+#+END_SRC
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on Switch
+#+END_SRC
+#+END_COMMENT
+
+# modify these to display the category name and link to the previous and next pages.
+# REMEMBER TO COPY IT TO THE FOOTER AS WELL
+[[/][Top]] | [[./][Up (Sprite)]] | [[PREVIOUS.org][< Previous (PAGE NAME)]] | [[NEXT.org][Next (PAGE NAME) >]]
+
+* SPUSED
+Checks if a sprite exists (has been created by =SPSET=).
+# lol there's a face =)
+** Syntax
+# use haskell as language for syntax examples as a gross workaround for github being the worst
+#+BEGIN_SRC haskell
+SPUSED sprite% OUT exists%
+#+END_SRC
+
+# if alternate syntax is needed, list it in the same way. Use OUT for one-return forms
+
+# describe the arguments here, if necessary.  at minimum, describe types
+| Parameter | Description |
+|-----------+-------------|
+| =sprite%= | Sprite management number |
+
+| Output | Description |
+|-----------+-------------|
+| =exists%= | 1 = sprite exists, 0 = sprite doesn't exist |
+
+** Examples
+#+BEGIN_SRC smilebasic
+ACLS
+PRINT SPUSED(7) '0
+SPSET 7,0
+PRINT SPUSED(7) '1 
+#+END_SRC
+
+** Possible Errors
+# Detail errors one might get from the instruction, with a focus on making the resolution clear
+| Error | Cause |
+|-------+-------|
+| Illegal function call | Wrong number of inputs or outputs |
+| Out of range          | =sprite%= is less than 0 or more than the maximum sprite management number |
+| Type mismatch         | =sprite%= isn't a number |
+
+# ! IF VERSION DIFFERENCES EXIST !
+# use the headings below.  Include bugs.
+** Version Information
+# include this table even if there is only one entry
++ [[#320][3.2.0]]
+*** 3.2.0
+Added [fn:1]
+
+** References
+[fn:1] SmileBoom, "Additions/Changes in Ver. 3.2.0 (June 17, 2015)" http://smilebasic.com/en/debug/archive/
+
+# If the page is longer than one screen height or so, add a navigation bar at the bottom of the page as well
+-----
+[[/][Top]] | [[./][Up (Sprite)]] | [[PREVIOUS.org][< Previous (PAGE NAME)]] | [[NEXT.org][Next (PAGE NAME) >]]
