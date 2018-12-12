@@ -52,12 +52,13 @@ If the end is less than the start, they are swapped.
 ** Examples
 #+BEGIN_SRC smilebasic
 SPCLIP 200,0, 400-1,240-1
-'only sprites on the right half of the screen are visible
+'only sprites on the right half of the screen will be visible
 FOR I=0 TO 99
   SPSET I,0
   SPOFS I,RND(400),RND(240)
 NEXT
 #+END_SRC
+(Someone get a screenshot of this maybe)
 
 # ! IF VERSION DIFFERENCES EXIST !
 # use the headings below.  Include bugs.
