@@ -33,6 +33,7 @@
 
 * SPCLIP
 Controls which part of the screen sprites are visible in.
+Sprites that go outside this area will be cut off.
 
 ** Syntax
 # use haskell as language for syntax examples as a gross workaround for github being the worst
@@ -52,6 +53,10 @@ If the end is less than the start, they are swapped.
 #+BEGIN_SRC smilebasic
 SPCLIP 200,0, 400-1,240-1
 'only sprites on the right half of the screen are visible
+FOR I=0 TO 99
+	SPSET I,0
+	SPOFS I,RND(400),RND(240)
+NEXT
 #+END_SRC
 
 # ! IF VERSION DIFFERENCES EXIST !
