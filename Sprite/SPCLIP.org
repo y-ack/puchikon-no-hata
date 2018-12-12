@@ -40,9 +40,13 @@ Controls which part of the screen sprites are visible in.
 SPCLIP [start_x%, start_y%, end_x%, end_y%]
 #+END_SRC
 
+If no arguments are passed, the sprite display area covers the entire screen.
+
 [[http://kland.smilebasicsource.com/i/negmf.png]]
 
-If no arguments are passed, the sprite display area covers the entire screen.
+More precisely, the visible area starts at ( start_x%, start_y% ) and ends at ( start_x%-1, start_y%-1 )
+If the end is less than the start, they are swapped.
+
 
 ** Examples
 #+BEGIN_SRC smilebasic
