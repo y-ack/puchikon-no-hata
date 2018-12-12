@@ -54,8 +54,8 @@ If the end is less than the start, they are swapped.
 SPCLIP 200,0, 400-1,240-1
 'only sprites on the right half of the screen are visible
 FOR I=0 TO 99
-	SPSET I,0
-	SPOFS I,RND(400),RND(240)
+  SPSET I,0
+  SPOFS I,RND(400),RND(240)
 NEXT
 #+END_SRC
 
