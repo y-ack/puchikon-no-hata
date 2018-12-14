@@ -94,7 +94,7 @@ Fixed bugs when drawing a circle outside the screen [fn:3]
 *** 3.2.1
 Fixed problems with drawing arcs [fn:4]
 
-** 3.5.2
+*** 3.5.2
 SmileBASIC no longer freezes when drawing a circle with a very large radius [fn:5]
 
 ** References
