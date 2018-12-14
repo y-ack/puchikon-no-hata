@@ -1,0 +1,113 @@
+# (KEEP THIS)
+#+TEMPLATE_VERSION: 1.16
+#+OPTIONS: f:t
+
+
+# PLATFORM INFO TEMPLATES
+# (you can remove this)
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on 3DS
+#+END_SRC
+#+BEGIN_COMMENT # did I mention that org-ruby is broken
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on Wii U
+#+END_SRC
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on Pasocom Mini
+#+END_SRC
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on *Starter
+#+END_SRC
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on Switch
+#+END_SRC
+#+END_COMMENT
+
+# modify these to display the category name and link to the previous and next pages.
+# REMEMBER TO COPY IT TO THE FOOTER AS WELL
+[[/][Top]] | [[./][Up (GRP)]] | [[PREVIOUS.org][< Previous (PAGE NAME)]] | [[NEXT.org][Next (PAGE NAME) >]]
+
+* GCIRCLE
+Draw a circle, arc, or sector.\\
+[[http://kland.smilebasicsource.com/i/jipob.png]]
+
+** Syntax
+# use haskell as language for syntax examples as a gross workaround for github being the worst
+#+BEGIN_SRC haskell
+GCIRCLE center_x%, center_y%, radius% [, color%]
+GCIRCLE center_x%, center_y%, radius%, start_angle%, end_angle% [, sector_flag% [, color%]]
+#+END_SRC
+
+# if alternate syntax is needed, list it in the same way. Use OUT for one-return forms
+
+# describe the arguments here, if necessary.  at minimum, describe types
+| Parameter | Description |
+|-----------+-------------|
+| center_x%, center_y% | Center position |
+| radius% | Radius. If 0, nothing is drawn. |
+| color% | Color |
+| start_angle%, end_angle% | Range of arc to draw, in degrees |
+| sector_flag% | If not 0, lines will be drawn from the center of the circle to the endpoints of the arc. |
+
+Arc is always drawn clockwise from start_angle% to end_angle%, measured from the X+ axis.
+
+# if the output is nontrivial or has interesting properties:
+| Output    | Description       |
+|-----------+-------------------|
+| color%    | blood coagulation |
+
+** Examples
+#+BEGIN_SRC smilebasic
+ACLS
+A$ = "ayaya"
+FOO A$
+#+END_SRC
+
+** Possible Errors
+# Detail errors one might get from the instruction, with a focus on making the resolution clear
+| Error | Cause |
+|-------+-------|
+| Illegal Function Call | arg0% is unspecified, or arg2# is negative |
+
+# ! IF VERSION DIFFERENCES EXIST !
+# use the headings below.  Include bugs.
+** Version Information
+# include this table even if there is only one entry
++ [[#300][3.0.2]]
++ [[#310][3.1.0]]
++ [[#320][3.2.0]]
++ [[#321][3.2.1]]
++ [[#352][3.5.2]]
+*** 3.0.2
+Fixed out of range error if radius was 0 [fn:1]
+
+*** 3.1.0
+Added arc drawing [fn:2]
+
+*** 3.2.0
+Fixed bugs when drawing a circle outside the screen [fn:3]
+
+*** 3.2.1
+Fixed problems with drawing arcs [fn:4]
+
+** 3.5.2
+SmileBASIC no longer freezes when drawing a circle with a very large radius [fn:5]
+
+** References
+[fn:1] SmileBoom, "Fixes in Ver. 3.0.2 (January 7, 2015)" http://smilebasic.com/en/debug/archive/
+
+[fn:2] SmileBoom, "Additions/Changes in Ver. 3.1.0 (March 4, 2015)" http://smilebasic.com/en/debug/archive/
+
+[fn:3] SmileBoom, "Fixes in Ver. 3.2.0 (June 17, 2015)" http://smilebasic.com/en/debug/archive/
+
+[fn:4] SmileBoom, "Fixes in Ver. 3.2.1 (August 5, 2015)" http://smilebasic.com/en/debug/archive/
+
+[fn:5] SmileBoom, "Bug Fixes in Ver. 3.5.2 (June 24, 2017)" http://smilebasic.com/en/debug/archive/
+
+# If the page is longer than one screen height or so, add a navigation bar at the bottom of the page as well
+-----
+[[/][Top]] | [[./][Up (GRP)]] | [[PREVIOUS.org][< Previous (PAGE NAME)]] | [[NEXT.org][Next (PAGE NAME) >]]
