@@ -1,0 +1,101 @@
+# (KEEP THIS)
+#+TEMPLATE_VERSION: 1.16
+#+OPTIONS: f:t
+
+
+# PLATFORM INFO TEMPLATES
+# (you can remove this)
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on 3DS
+#+END_SRC
+#+BEGIN_COMMENT # did I mention that org-ruby is broken
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on Wii U
+#+END_SRC
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on Pasocom Mini
+#+END_SRC
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on *Starter
+#+END_SRC
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on Switch
+#+END_SRC
+#+END_COMMENT
+
+# modify these to display the category name and link to the previous and next pages.
+# REMEMBER TO COPY IT TO THE FOOTER AS WELL
+[[/][Top]] | [[./][Up (Music)]] | [[PREVIOUS.org][< Previous (PAGE NAME)]] | [[NEXT.org][Next (PAGE NAME) >]]
+
+* BGMPLAY
+Play music.
+
+** Syntax
+# use haskell as language for syntax examples as a gross workaround for github being the worst
+#+BEGIN_SRC haskell
+BGMPLAY song%
+BGMPLAY track%, song% [, volume%]
+BGMPLAY mml$
+#+END_SRC
+
+# if alternate syntax is needed, list it in the same way. Use OUT for one-return forms
+
+# describe the arguments here, if necessary.  at minimum, describe types
+| Parameter | Description |
+|-----------+-------------|
+| track% | 0-7. Default: 0 |
+| song% | Built in songs: 0-42. Custom songs: 128-255 |
+| volume% | 0 - 127. Default: 64 |
+| mml$ | MML to play. Equivilant to =BGMSET 255,mml$:BGMPLAY 255= |
+
+** Examples
+#+BEGIN_SRC smilebasic
+BGMPLAY 3
+WAIT 60
+BGMSTOP
+BGMPLAY 0,26
+BGMPLAY 1,42 'play 2 songs at the same time
+WAIT 120
+BGMSTOP
+BGMPLAY ":0 CDEFG :1 @3 CCCCC" 'play MML
+#+END_SRC
+
+# ! IF VERSION DIFFERENCES EXIST !
+# use the headings below.  Include bugs.
+** Version Information
+# include this table even if there is only one entry
++ [[#302][3.0.2]]
++ [[#310][3.1.0]]
++ [[#320][3.2.0]]
+*** 3.0.2
+Fix volume when BGM variables are used [fn:1]
+
+*** 3.1.0
+Volume 0 works [fn:2]
+
+*** 3.2.0
+Fixed bug where only 4 tracks could be played at the same time [fn:3]
+
+*** 3.5.2
+SB no longer crashes when a very long string is passed to BGMPLAY [fn:4]
+
+** See Also
+ - [[BGMSET.org][BGMSET]]
+ - [[BGMSTOP.org][BGMSTOP]]
+
+** References
+[fn:1] SmileBoom, "Fixes in Ver. 3.0.2 (January 7, 2015)" http://smilebasic.com/en/debug/archive/
+
+[fn:2] SmileBoom, "Fixes in Ver. 3.1.0 (March 4, 2015)" http://smilebasic.com/en/debug/archive/
+
+[fn:3] SmileBoom, "Fixes in Ver. 3.2.0 (June 17, 2015)" http://smilebasic.com/en/debug/archive/
+
+[fn:4] SmileBoom, "Bug Fixes in Ver. 3.5.2 (June 24, 2017)" http://smilebasic.com/en/debug/archive/
+
+# If the page is longer than one screen height or so, add a navigation bar at the bottom of the page as well
+-----
+[[/][Top]] | [[./][Up (Music)]] | [[PREVIOUS.org][< Previous (PAGE NAME)]] | [[NEXT.org][Next (PAGE NAME) >]]
