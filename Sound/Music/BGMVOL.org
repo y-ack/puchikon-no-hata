@@ -1,0 +1,68 @@
+# (KEEP THIS)
+#+TEMPLATE_VERSION: 1.16
+#+OPTIONS: f:t
+
+
+# PLATFORM INFO TEMPLATES
+# (you can remove this)
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on 3DS
+#+END_SRC
+#+BEGIN_COMMENT # did I mention that org-ruby is broken
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on Wii U
+#+END_SRC
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on Pasocom Mini
+#+END_SRC
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on *Starter
+#+END_SRC
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on Switch
+#+END_SRC
+#+END_COMMENT
+
+# modify these to display the category name and link to the previous and next pages.
+# REMEMBER TO COPY IT TO THE FOOTER AS WELL
+[[/][Top]] | [[./][Up (Music)]] | [[PREVIOUS.org][< Previous (PAGE NAME)]] | [[NEXT.org][Next (PAGE NAME) >]]
+
+* BGMVOL
+Sets the volume of a music track.
+
+** Syntax
+# use haskell as language for syntax examples as a gross workaround for github being the worst
+#+BEGIN_SRC haskell
+BGMVOL [track%,] volume%
+#+END_SRC
+
+# if alternate syntax is needed, list it in the same way. Use OUT for one-return forms
+
+# describe the arguments here, if necessary.  at minimum, describe types
+| Parameter | Description |
+|-----------+-------------|
+| track% | 0-7. Default: 0 |
+| volume% | 0-127. 64 is the normal volume level. |
+
+** Examples
+#+BEGIN_SRC smilebasic
+BGMPLAY 3
+WAIT 60
+BGMVOL 127 'louder
+WAIT 60
+BGMVOL 10 'quiet
+#+END_SRC
+
+** Possible Errors
+# Detail errors one might get from the instruction, with a focus on making the resolution clear
+| Error | Cause |
+|-------+-------|
+| Out of range | track% is not 0-7, or volume% is not 0-127. |
+
+# If the page is longer than one screen height or so, add a navigation bar at the bottom of the page as well
+-----
+[[/][Top]] | [[./][Up (Music)]] | [[PREVIOUS.org][< Previous (PAGE NAME)]] | [[NEXT.org][Next (PAGE NAME) >]]
