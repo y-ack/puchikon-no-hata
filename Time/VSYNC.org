@@ -1,0 +1,80 @@
+# (KEEP THIS)
+#+TEMPLATE_VERSION: 1.16
+#+OPTIONS: f:t
+
+
+# PLATFORM INFO TEMPLATES
+# (you can remove this)
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on 3DS
+#+END_SRC
+#+BEGIN_COMMENT # did I mention that org-ruby is broken
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on Wii U
+#+END_SRC
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on Pasocom Mini
+#+END_SRC
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on *Starter
+#+END_SRC
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on Switch
+#+END_SRC
+#+END_COMMENT
+
+# modify these to display the category name and link to the previous and next pages.
+# REMEMBER TO COPY IT TO THE FOOTER AS WELL
+[[/][Top]] | [[./][Up (Time)]] | [[PREVIOUS.org][< Previous (PAGE NAME)]] | [[NEXT.org][Next (PAGE NAME) >]]
+
+* VSYNC
+=VSYNC n= will pause the program until =n= screen updates (frames) have passed since the last time =VSYNC= or =WAIT= was called.
+
+** Syntax
+# use haskell as language for syntax examples as a gross workaround for github being the worst
+#+BEGIN_SRC haskell
+VSYNC [frames%]
+#+END_SRC
+
+# if alternate syntax is needed, list it in the same way. Use OUT for one-return forms
+
+# describe the arguments here, if necessary.  at minimum, describe types
+| Parameter | Description |
+|-----------+-------------|
+| frames% | Defaults to 1. If ≤ 0, nothing happens. |
+
+** Examples
+#+BEGIN_SRC smilebasic
+WHILE 1
+ VSYNC
+ PRINT MAINCNT
+WEND
+#+END_SRC
+
+# ! IF VERSION DIFFERENCES EXIST !
+# use the headings below.  Include bugs.
+** Version Information
+# include this table even if there is only one entry
++ [[#302][3.0.2]]
++ [[#331][3.3.1]]
+*** 3.0.2
+Fixed desyncronization [fn:1]
+
+*** 3.3.1
+Sleep mode no longer skips VSYNC and WAIT [fn:2]
+
+** See Also
+ - [[WAIT.org][WAIT]]
+ - [[MAINCNT.org][MAINCNT]]
+
+** References
+[fn:1] SmileBoom, "Fixes in Ver. 3.0.2 (January 7, 2015)" http://smilebasic.com/en/debug/archive/\\
+[fn:2] SmileBoom, "Bug Fixes in Ver. 3.3.1 (June 15, 2016)" http://smilebasic.com/en/debug/archive/\\
+
+# If the page is longer than one screen height or so, add a navigation bar at the bottom of the page as well
+-----
+[[/][Top]] | [[./][Up (Time)]] | [[PREVIOUS.org][< Previous (PAGE NAME)]] | [[NEXT.org][Next (PAGE NAME) >]]
