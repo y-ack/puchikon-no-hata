@@ -1,0 +1,63 @@
+# (KEEP THIS)
+#+TEMPLATE_VERSION: 1.16
+#+OPTIONS: f:t
+
+
+# PLATFORM INFO TEMPLATES
+# (you can remove this)
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on 3DS
+#+END_SRC
+#+BEGIN_COMMENT # did I mention that org-ruby is broken
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on Wii U
+#+END_SRC
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on Pasocom Mini
+#+END_SRC
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on *Starter
+#+END_SRC
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on Switch
+#+END_SRC
+#+END_COMMENT
+
+# modify these to display the category name and link to the previous and next pages.
+# REMEMBER TO COPY IT TO THE FOOTER AS WELL
+[[/][Top]] | [[./][Up (String)]] | [[PREVIOUS.org][< Previous (PAGE NAME)]] | [[NEXT.org][Next (PAGE NAME) >]]
+
+* CHR$
+Returns a character from a specified character code (UTF-16)
+
+** Syntax 
+# use haskell as language for syntax examples as a gross workaround for github being the worst
+#+BEGIN_SRC haskell
+CHR$ value% OUT string$
+#+END_SRC
+
+# if alternate syntax is needed, list it in the same way. Use OUT for one-return forms
+
+# describe the arguments here, if necessary.  at minimum, describe types
+| Parameter | Description |
+|-----------+-------------|
+| =value%= | A number corresponding to a UTF-16 character code. |
+# if the output is nontrivial or has interesting properties:
+| Output    | Description       |
+|-----------+-------------------|
+| =string$= | The string character corresponding to the =value%= code. |
+If =value%= is a float number, it will be truncated down.
+
+** Examples
+#+BEGIN_SRC smilebasic
+PRINT CHR$(33) ' !
+PRINT CHR$(&H004D) ' M
+#+END_SRC
+
+# If the page is longer than one screen height or so, add a navigation bar at the bottom of the page as well
+-----
+[[/][Top]] | [[./][Up (String)]] | [[PREVIOUS.org][< Previous (PAGE NAME)]] | [[NEXT.org][Next (PAGE NAME) >]]
