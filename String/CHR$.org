@@ -34,7 +34,7 @@
 * CHR$
 Returns a character from a specified character code (UTF-16)
 
-** Syntax
+** Syntax 
 # use haskell as language for syntax examples as a gross workaround for github being the worst
 #+BEGIN_SRC haskell
 CHR$ value% OUT string$

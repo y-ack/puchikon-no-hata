@@ -34,7 +34,7 @@
 * ASC
 Returns the character code (UTF-16) from a specified character or string.
 
-** Syntax
+** Syntax 
 # use haskell as language for syntax examples as a gross workaround for github being the worst
 #+BEGIN_SRC haskell
 ASC string$ OUT value%
