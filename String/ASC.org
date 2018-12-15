@@ -41,7 +41,7 @@ ASC string$ OUT value%
 #+END_SRC
 
 # if alternate syntax is needed, list it in the same way. Use OUT for one-return forms
-
+ 
 # describe the arguments here, if necessary.  at minimum, describe types
 | Parameter | Description |
 |-----------+-------------|
