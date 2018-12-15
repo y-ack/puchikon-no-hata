@@ -1,0 +1,72 @@
+# (KEEP THIS)
+#+TEMPLATE_VERSION: 1.16
+#+OPTIONS: f:t
+
+
+# PLATFORM INFO TEMPLATES
+# (you can remove this)
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on 3DS
+#+END_SRC
+#+BEGIN_COMMENT # did I mention that org-ruby is broken
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on Wii U
+#+END_SRC
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on Pasocom Mini
+#+END_SRC
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on *Starter
+#+END_SRC
+#+BEGIN_COMMENT
+#+BEGIN_SRC diff
+-⚠️ This feature is only available on Switch
+#+END_SRC
+#+END_COMMENT
+
+# modify these to display the category name and link to the previous and next pages.
+# REMEMBER TO COPY IT TO THE FOOTER AS WELL
+[[/][Top]] | [[./][Up (String)]] | [[PREVIOUS.org][< Previous (PAGE NAME)]] | [[NEXT.org][Next (PAGE NAME) >]]
+
+* MID$
+Extract characters from a string, starting on the specified =pos%= of the string.
+
+** Syntax
+# use haskell as language for syntax examples as a gross workaround for github being the worst
+#+BEGIN_SRC haskell
+MID$ string$, pos%, length% OUT substring$
+#+END_SRC
+
+# if alternate syntax is needed, list it in the same way. Use OUT for one-return forms
+
+# describe the arguments here, if necessary.  at minimum, describe types
+| Parameter | Description |
+|-----------+-------------|
+| =string$= | A string. |
+| =pos%= | Position on =string$= to start extracting characters.|
+| =length%= | The number of characters to extract, starting from (but not including) =pos%=. Can't be less than 0. |
+# if the output is nontrivial or has interesting properties:
+| Output    | Description       |
+|-----------+-------------------|
+| =substring$= | The extracted characters from =string$= |
+
+If =pos%= is bigger than the length of =string$=, the function returns nothing.
+
+** Examples
+#+BEGIN_SRC smilebasic
+PRINT MID$("TEST",1,2) ' ES
+PRINT MID$("12345",3,1) ' 5
+#+END_SRC
+
+** Possible Errors
+# Detail errors one might get from the instruction, with a focus on making the resolution clear
+| Error | Cause |
+|-------+-------|
+| Out of range | =length%= is less than 0. |
+
+# If the page is longer than one screen height or so, add a navigation bar at the bottom of the page as well
+-----
+[[/][Top]] | [[./][Up (String)]] | [[PREVIOUS.org][< Previous (PAGE NAME)]] | [[NEXT.org][Next (PAGE NAME) >]]
