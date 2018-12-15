@@ -32,7 +32,7 @@
 [[/][Top]] | [[./][Up (String)]] | [[PREVIOUS.org][< Previous (PAGE NAME)]] | [[NEXT.org][Next (PAGE NAME) >]]
 
 * ASC
-Returns the character code (UTF-16) from a specified character or string.
+Returns the character code (UCS-2) from a specified character or string.
 
 ** Syntax 
 # use haskell as language for syntax examples as a gross workaround for github being the worst
@@ -49,9 +49,10 @@ ASC string$ OUT value%
 # if the output is nontrivial or has interesting properties:
 | Output    | Description       |
 |-----------+-------------------|
-| =value%= | The UTF-16 code of the character |
+| =value%= | The UCS-2 code of the character |
 
 The function will take the first character of =string$= if a string with more than one character is specified.
+
 
 ** Examples
 #+BEGIN_SRC smilebasic

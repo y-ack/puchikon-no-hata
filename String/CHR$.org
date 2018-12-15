@@ -32,7 +32,7 @@
 [[/][Top]] | [[./][Up (String)]] | [[PREVIOUS.org][< Previous (PAGE NAME)]] | [[NEXT.org][Next (PAGE NAME) >]]
 
 * CHR$
-Returns a character from a specified character code (UTF-16)
+Returns a character from a specified character code (UCS-2)
 
 ** Syntax 
 # use haskell as language for syntax examples as a gross workaround for github being the worst
@@ -45,17 +45,19 @@ CHR$ value% OUT string$
 # describe the arguments here, if necessary.  at minimum, describe types
 | Parameter | Description |
 |-----------+-------------|
-| =value%= | A number corresponding to a UTF-16 character code. |
+| =value%= | A number corresponding to a UCS-2 character code. |
 # if the output is nontrivial or has interesting properties:
 | Output    | Description       |
 |-----------+-------------------|
 | =string$= | The string character corresponding to the =value%= code. |
+
 If =value%= is a float number, it will be truncated down.
 
 ** Examples
 #+BEGIN_SRC smilebasic
 PRINT CHR$(33) ' !
 PRINT CHR$(&H004D) ' M
+PRINT CHR$(&H30C8) ' ト
 #+END_SRC
 
 # If the page is longer than one screen height or so, add a navigation bar at the bottom of the page as well
