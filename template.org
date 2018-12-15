@@ -1,29 +1,11 @@
 # (KEEP THIS)
-#+TEMPLATE_VERSION: 1.16
+#+TEMPLATE_VERSION: 1.17
 #+OPTIONS: f:t
 
 
-# PLATFORM INFO TEMPLATES
-# (you can remove this)
-#+BEGIN_COMMENT
+#+BEGIN_COMMENT Platform info template (copy this to specify that a feature is only available on a particular platform)
 #+BEGIN_SRC diff
--⚠️ This feature is only available on 3DS
-#+END_SRC
-#+BEGIN_COMMENT # did I mention that org-ruby is broken
-#+BEGIN_SRC diff
--⚠️ This feature is only available on Wii U
-#+END_SRC
-#+BEGIN_COMMENT
-#+BEGIN_SRC diff
--⚠️ This feature is only available on Pasocom Mini
-#+END_SRC
-#+BEGIN_COMMENT
-#+BEGIN_SRC diff
--⚠️ This feature is only available on *Starter
-#+END_SRC
-#+BEGIN_COMMENT
-#+BEGIN_SRC diff
--⚠️ This feature is only available on Switch
+-⚠️ This feature is only available on ___
 #+END_SRC
 #+END_COMMENT
 
@@ -70,10 +52,6 @@ FOO A$
 # ! IF VERSION DIFFERENCES EXIST !
 # use the headings below.  Include bugs.
 ** Version Information
-# include this table even if there is only one entry
-+ [[#320][3.2.0]]
-+ [[#321][3.2.1]]
-+ [[#40][Switch 4.0]]
 *** 3.2.0
 it didn't work [fn:1]
 
