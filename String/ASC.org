@@ -50,6 +50,7 @@ ASC string$ OUT value%
 | Output    | Description       |
 |-----------+-------------------|
 | =value%= | The UTF-16 code of the character |
+
  The function will take the first character of =string$= if a string with more than one character is specified.
 
 ** Examples
