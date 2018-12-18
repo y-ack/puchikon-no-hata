@@ -55,10 +55,13 @@ MID$ string$, pos%, length% OUT substring$
 
 If =pos%= is bigger than the length of =string$=, the function does not trigger an error. Instead, returns nothing.
 
+Instead of =MID$(string$,pos%,1)=, you should use =string$[pos%]=.
+
 ** Examples
 #+BEGIN_SRC smilebasic
 PRINT MID$("TEST",1,2) ' ES
 PRINT MID$("12345",3,1) ' 4
+PRINT "12345"[3] '4
 #+END_SRC
 
 ** Possible Errors
