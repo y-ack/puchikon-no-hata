@@ -31,37 +31,59 @@
 # REMEMBER TO COPY IT TO THE FOOTER AS WELL
 [[/][Top]] | [[./][Up (String)]] | [[PREVIOUS.org][< Previous (PAGE NAME)]] | [[NEXT.org][Next (PAGE NAME) >]]
 
-* CHR$
-Returns a character from a specified character code (UCS-2)
+* SUBSTR$
+Inserts a string in another string, with optional character substitution.
 
 ** Syntax 
 # use haskell as language for syntax examples as a gross workaround for github being the worst
 #+BEGIN_SRC haskell
-CHR$ value% OUT string$
+SUBSTR$ target$, pos%, substitute$ OUT result$
+SUBSTR$ target$, pos%, [numberofchars%,] substitute$ OUT result$
 #+END_SRC
 
 # if alternate syntax is needed, list it in the same way. Use OUT for one-return forms
-
+ 
 # describe the arguments here, if necessary.  at minimum, describe types
 | Parameter | Description |
 |-----------+-------------|
-| =value%= | A number corresponding to a UCS-2 character code. |
+| =target$= | A string. |
+| =pos%= | Position on =target$= to place =substitute$=. Can be the length of =target$=. |
+| =numberofchars%= | Number of characters to replace after =pos%=. |
+| =substitute$= | A character or string to insert. |
 # if the output is nontrivial or has interesting properties:
 | Output    | Description       |
 |-----------+-------------------|
-| =string$= | The string character corresponding to the =value%= code. |
+| =result$= | Resulting string after operation. |
 
-If =value%= is a float number, it will be truncated down.
+- If =numberofchars%= is omitted, all characters in =target$= after =pos%= will be replaced by =substitute$=, regardless of the length of both strings.
+- If =numberofchars%= is 0, =substitute$= will be placed on the given =pos%= and no replacement happends.
+
 
 ** Examples
 #+BEGIN_SRC smilebasic
-PRINT CHR$(33) ' !
-PRINT CHR$(&H004D) ' M
-PRINT CHR$(&H30C8) ' ト
+' Substitution
+PRINT SUBSTR$("1234567890",1,"#") ' "1#"
+PRINT SUBSTR$("12345",0,1,"#") ' "#2345"
+PRINT SUBSTR$("12345",1,3,"=") ' "1#5"
+
+' Append
+' Append at the end
+PRINT SUBSTR$("123",3,"_ABC") ' "123_ABC"
+' Append at the beginning
+PRINT SUBSTR$("ABC",0,0,"DEF") ' "DEFABC"
+' Append at the middle
+PRINT SUBSTR$("12345",2,0,"//") ' "12//345"
 #+END_SRC
 
+
+** Possible Errors
+# Detail errors one might get from the instruction, with a focus on making the resolution clear
+| Error | Cause |
+|-------+-------|
+| Out of range | =pos%= is less than 0, or bigger than the length of =target$=. Or =numberofchars%= is less than 0. |
+
 ** See Also:
-- [[ASC.org][ASC]]
+- [[MID$.org][MID$]]
 
 # If the page is longer than one screen height or so, add a navigation bar at the bottom of the page as well
 -----

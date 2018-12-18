@@ -22,11 +22,11 @@ Describe briefly the topic
  - [[HEX$][HEX$]]
  - [[FORMAT$][FORMAT$]]
  - [[LEN][LEN]]
- - [[MID$][MID$]]
- - [[LEFT$][LEFT$]]
- - [[RIGHT$][RIGHT$]]
+ - [[MID$.org][MID$]]
+ - [[LEFT$.org][LEFT$]]
+ - [[RIGHT$.org][RIGHT$]]
  - [[INSTR][INSTR]]
- - [[SUBST$][SUBST$]]
+ - [[SUBST$.org][SUBST$]]
 
 Provide more detail about intricacies of the feature/topic (but do not restate information covered by instruction pages) Include results of operators, edge cases, likely examples of use.
 

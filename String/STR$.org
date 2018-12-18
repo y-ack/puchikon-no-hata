@@ -52,3 +52,6 @@ STR$ number [, lengt​h%] OUT string$
 SCORE=1000
 PRINT "SCORE: "+STR$(SCORE) 'SCORE: 1000
 #+END_SRC
+
+** See Also:
+- [[VAL.org][VAL]]

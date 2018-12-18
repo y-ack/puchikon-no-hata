@@ -31,13 +31,13 @@
 # REMEMBER TO COPY IT TO THE FOOTER AS WELL
 [[/][Top]] | [[./][Up (String)]] | [[PREVIOUS.org][< Previous (PAGE NAME)]] | [[NEXT.org][Next (PAGE NAME) >]]
 
-* CHR$
-Returns a character from a specified character code (UCS-2)
+* RIGHT$
+Extract characters from the right side of a string.
 
-** Syntax 
+** Syntax
 # use haskell as language for syntax examples as a gross workaround for github being the worst
 #+BEGIN_SRC haskell
-CHR$ value% OUT string$
+RIGHT$ string$, length% OUT substring$
 #+END_SRC
 
 # if alternate syntax is needed, list it in the same way. Use OUT for one-return forms
@@ -45,23 +45,29 @@ CHR$ value% OUT string$
 # describe the arguments here, if necessary.  at minimum, describe types
 | Parameter | Description |
 |-----------+-------------|
-| =value%= | A number corresponding to a UCS-2 character code. |
+| =string$= | A string |
+| =length%= | The number of characters to extract. Can't be less than 0. If greater than the length of =string$=, the entire string is returned. |
 # if the output is nontrivial or has interesting properties:
 | Output    | Description       |
 |-----------+-------------------|
-| =string$= | The string character corresponding to the =value%= code. |
-
-If =value%= is a float number, it will be truncated down.
+| =substring$= | The rightmost =length%= characters of =string$= |
+=RIGHT$= always returns a new string, even if =length%= is greater than or equal to the length of =string$=.
 
 ** Examples
 #+BEGIN_SRC smilebasic
-PRINT CHR$(33) ' !
-PRINT CHR$(&H004D) ' M
-PRINT CHR$(&H30C8) ' ト
+PRINT RIGHT$("TEST",2) ' ST
+PRINT RIGHT$("AAAAA",200) ' AAAAA
 #+END_SRC
 
+** Possible Errors
+# Detail errors one might get from the instruction, with a focus on making the resolution clear
+| Error | Cause |
+|-------+-------|
+| Out of range | =length%= is less than 0 |
+
 ** See Also:
-- [[ASC.org][ASC]]
+- [[LEFT$.org][LEFT$]]
+- [[MID$.org][MID$]]
 
 # If the page is longer than one screen height or so, add a navigation bar at the bottom of the page as well
 -----
