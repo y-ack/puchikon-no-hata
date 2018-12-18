@@ -31,14 +31,14 @@
 # REMEMBER TO COPY IT TO THE FOOTER AS WELL
 [[/][Top]] | [[./][Up (String)]] | [[PREVIOUS.org][< Previous (PAGE NAME)]] | [[NEXT.org][Next (PAGE NAME) >]]
 
-* SUBSTR$
+* SUBST$
 Inserts a string in another string, with optional character substitution.
 
 ** Syntax 
 # use haskell as language for syntax examples as a gross workaround for github being the worst
 #+BEGIN_SRC haskell
-SUBSTR$ target$, pos%, substitute$ OUT result$
-SUBSTR$ target$, pos%, [numberofchars%,] substitute$ OUT result$
+SUBST$ target$, pos%, substitute$ OUT result$
+SUBST$ target$, pos%, [numberofchars%,] substitute$ OUT result$
 #+END_SRC
 
 # if alternate syntax is needed, list it in the same way. Use OUT for one-return forms
@@ -62,17 +62,17 @@ SUBSTR$ target$, pos%, [numberofchars%,] substitute$ OUT result$
 ** Examples
 #+BEGIN_SRC smilebasic
 ' Substitution
-PRINT SUBSTR$("1234567890",1,"#") ' "1#"
-PRINT SUBSTR$("12345",0,1,"#") ' "#2345"
-PRINT SUBSTR$("12345",1,3,"=") ' "1#5"
+PRINT SUBST$("1234567890",1,"#") ' "1#"
+PRINT SUBST$("12345",0,1,"#") ' "#2345"
+PRINT SUBST$("12345",1,3,"=") ' "1#5"
 
 ' Append
 ' Append at the end
-PRINT SUBSTR$("123",3,"_ABC") ' "123_ABC"
+PRINT SUBST$("123",3,"_ABC") ' "123_ABC"
 ' Append at the beginning
-PRINT SUBSTR$("ABC",0,0,"DEF") ' "DEFABC"
+PRINT SUBST$("ABC",0,0,"DEF") ' "DEFABC"
 ' Append at the middle
-PRINT SUBSTR$("12345",2,0,"//") ' "12//345"
+PRINT SUBST$("12345",2,0,"//") ' "12//345"
 #+END_SRC
 
 
