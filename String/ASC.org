@@ -60,6 +60,9 @@ PRINT ASC("A") ' 65
 PRINT ASC("AbCdE") ' 65
 #+END_SRC
 
+** See Also:
+- [[CHR$.org][CHR$]]
+
 # If the page is longer than one screen height or so, add a navigation bar at the bottom of the page as well
 -----
 [[/][Top]] | [[./][Up (String)]] | [[PREVIOUS.org][< Previous (PAGE NAME)]] | [[NEXT.org][Next (PAGE NAME) >]]

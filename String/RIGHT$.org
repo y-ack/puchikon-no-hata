@@ -66,8 +66,8 @@ PRINT RIGHT$("AAAAA",200) ' AAAAA
 | Out of range | =length%= is less than 0 |
 
 ** See Also:
-- [[MID$.org][MID$]]
 - [[LEFT$.org][LEFT$]]
+- [[MID$.org][MID$]]
 
 # If the page is longer than one screen height or so, add a navigation bar at the bottom of the page as well
 -----

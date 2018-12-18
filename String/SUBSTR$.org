@@ -82,6 +82,9 @@ PRINT SUBSTR$("12345",2,0,"//") ' "12//345"
 |-------+-------|
 | Out of range | =pos%= is less than 0, or bigger than the length of =target$=. Or =numberofchars%= is less than 0. |
 
+** See Also:
+- [[MID$.org][MID$]]
+
 # If the page is longer than one screen height or so, add a navigation bar at the bottom of the page as well
 -----
 [[/][Top]] | [[./][Up (String)]] | [[PREVIOUS.org][< Previous (PAGE NAME)]] | [[NEXT.org][Next (PAGE NAME) >]]

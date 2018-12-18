@@ -47,25 +47,29 @@ MID$ string$, pos%, length% OUT substring$
 |-----------+-------------|
 | =string$= | A string. |
 | =pos%= | Position on =string$= to start extracting characters.|
-| =length%= | The number of characters to extract, starting from (but not including) =pos%=. Can't be less than 0. |
+| =length%= | The number of characters to extract, starting from =pos%=. Can't be less than 0. |
 # if the output is nontrivial or has interesting properties:
 | Output    | Description       |
 |-----------+-------------------|
 | =substring$= | The extracted characters from =string$= |
 
-If =pos%= is bigger than the length of =string$=, the function returns nothing.
+If =pos%= is bigger than the length of =string$=, the function does not trigger an error. Instead, returns nothing.
 
 ** Examples
 #+BEGIN_SRC smilebasic
 PRINT MID$("TEST",1,2) ' ES
-PRINT MID$("12345",3,1) ' 5
+PRINT MID$("12345",3,1) ' 4
 #+END_SRC
 
 ** Possible Errors
 # Detail errors one might get from the instruction, with a focus on making the resolution clear
 | Error | Cause |
 |-------+-------|
-| Out of range | =length%= is less than 0. |
+| Out of range | =length%= is less than 0, or =pos%= is less than 0. |
+
+** See Also:
+- [[LEFT$.org][LEFT$]]
+- [[RIGHT$.org][RIGHT$]]
 
 # If the page is longer than one screen height or so, add a navigation bar at the bottom of the page as well
 -----
