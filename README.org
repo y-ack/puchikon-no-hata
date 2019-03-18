@@ -1,6 +1,10 @@
 * SmileBASIC Wiki temporary location
 Jump: [[#ImportantReading][Important Reading]] | [[#TableofContents][Table of Contents]] | [[#Lists][Lists]] | [[#Contributing][Contributing]]
 
+*While the pages and organization still apply, we have moved to a custom markup following limitations with existing systems.  The repository for the new files is [[https://github.com/12Me21/1-2-oatmeal]].  Contributions in org-mode are easily translated, so it's okay continue contributing in org-mode syntax.*
+
+*Contribution rules and advice still apply.  Please contact 12Me21 or Y on SBS for more information.*
+
 ** Important Reading
 The following articles contain highly recommended pre-reading material regarding SmileBASIC fundamentals and internals that aid understanding of the rest of the documentation.
 + [[/notes/Syntax.org][Syntax Notation Used In This Guide]]
