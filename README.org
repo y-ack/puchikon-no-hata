@@ -1,9 +1,10 @@
 * SmileBASIC Wiki temporary location
 Jump: [[#ImportantReading][Important Reading]] | [[#TableofContents][Table of Contents]] | [[#Lists][Lists]] | [[#Contributing][Contributing]]
 
-*While the pages and organization still apply, we have moved to a custom markup following limitations with existing systems.  The repository for the new files is [[https://github.com/12Me21/1-2-oatmeal]].  Contributions in org-mode are easily translated, so it's okay continue contributing in org-mode syntax.*
++While the pages and organization still apply, we have moved to a custom markup following limitations with existing systems.  The repository for the new files is [[https://github.com/12Me21/1-2-oatmeal]].  Contributions in org-mode are easily translated, so it's okay continue contributing in org-mode syntax.+
 
-*Contribution rules and advice still apply.  Please contact 12Me21 or Y on SBS for more information.*
+*2020-05-16 Update: the documentation project using the custom markup language now exists at http://new.smilebasicsource.com/pages/categories/682.*
+SmileBASIC Source 2 docs navigation is still incomplete, further solutions pending.
 
 ** Important Reading
 The following articles contain highly recommended pre-reading material regarding SmileBASIC fundamentals and internals that aid understanding of the rest of the documentation.
